@@ -74,3 +74,33 @@
     gap: 10px;
   }
 }
+
+
+
+
+
+
+/* footer */
+
+footer{
+  background-color: #005027;
+  color: #fff;
+}
+
+.footer-body{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px 0;
+}
+
+@media(max-width: 500px){
+  .footer-body {
+    display: flex;
+    padding: 30px 50px 0;
+    flex-direction: column;
+    text-align: center;
+    }
+    .icones{
+      margin: 0 0 15px 0;
+    }
+}
