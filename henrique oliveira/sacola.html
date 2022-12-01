@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilo.css">
+  <link rel="shortcut icon" href="/assets/pizza-favicon.ico" type="image/x-icon">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <title>Pizzanet - Sacola</title>
+</head>
+<body id="body">
+  <header>
+    <nav class="navbar navbar-expand-lg" id="header">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img id="imgLogo" class="img-Fluid" src="./loog-pizzanet.png" alt="imgLogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="navbar-nav navegacao">
+           <div class="navbar pages1">
+            <span class="textHover"><a class="nav-link active" href="#">Home</a></span>
+            <span class="textHover"><a class="nav-link active" href="#">Cardápio</a></span>
+            <span class="textHover"><a class="nav-link active" href="#">Pricing</a></span>
+            <span class="textHover"><a class="nav-link active" href="#">Notícias</a></span>
+          </div>
+          <div class="navbar pages2">
+          <div class="navbar whats">
+            <i class="bi bi-whatsapp"></i>
+            <a class="nav-link active">(11) 98100-0018</a>
+          </div>
+           <a class="nav-link active" href="#"><button class="btns">Login</button></a>
+           <a class="nav-link active" href="#"><button class="btns">Cadastro</button></a>
+           <span><a class="nav-link active" href="#"><i class="bi bi-bag"></i></a></span>
+        </div>
+        </div>
+      </div>
+    </nav>
+    <div class="entregador">
+    <img src="entregador.png">
+  </div>
+    <div class="retangulo">
+    </div>
+    <div class="carrinho">
+        <hr>
+        <form method="post" action="/cart/add" id="AddToCartForm-product-template" accept-charset="UTF-8" class="product-form product-form--payment-button" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+          
+          
+
+            <select name="id" id="ProductSelect-product-template" class="product-form__variants no-js">
+              
+                <option selected="selected" data-sku="30571" value="39809230733498">
+                  
+                    Preço - R$ 49,00 BRL
+                  
+                </option>
+              
+            </select>
+            
+            <div class="product-form__item product-form__item--quantity">
+              <label for="Quantity">Quantidade</label>
+              <div class="js-qty">
+          <input type="text" value="1" id="Quantity" name="quantity" pattern="[0-9]*" data-line="" class="js-qty__input" aria-live="polite">
+          <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Reduzir quantidade em uma unidade">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-minus" viewBox="0 0 22 3"><path fill="#000" d="M21.5.5v2H.5v-2z" fill-rule="evenodd"></path></svg>
+            <span class="icon__fallback-text">−</span>
+          </button>
+          <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Aumentar quantidade em uma unidade">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 22 21"><path d="M12 11.5h9.5v-2H12V0h-2v9.5H.5v2H10V21h2v-9.5z" fill="#000" fill-rule="evenodd"></path></svg>
+            <span class="icon__fallback-text">+</span>
+          </button>
+        </div>
+            </div>
+            <div class="product-form__item product-form__item--submit">
+              <button type="submit" name="add" id="AddToCart-product-template" class="btn btn--full product-form__cart-submit btn--secondary-accent">
+                
+                  
+                    Adicionar ao carrinho
+                  
+                </span>
+              </button>
+              
+                
+              
+            </div>
+            
+          </form>
+         <hr>
+    
+     </div>
+    </div>
+  </header>
+   
+
+
+  <footer class="footer navbar-fixed-bottom">
+    <!-- Grid container -->
+    <section class="footer-body">
+      <div class="icones">
+        <img src="icones/icone-github.png" alt="icone-github">
+        <img src="icones/icone-figma.png" alt="icone-figma">
+        <img src="icones/icone-linkedin.png" alt="icone-linkedin">
+
+      </div>
+
+      <div class="text">
+        <p>Trabalhe conosco</p>
+
+      </div>
+    </section>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="copyright text-center p-3">
+      © Pizza's Net 2022
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+</html>
