@@ -75,6 +75,38 @@
   }
 }
 
+.title_1{
+  padding: 50px;
+}
+
+.content{
+  padding-left: 50px;
+}
+
+.ilustration_1{
+  width: 300px;
+  box-shadow: 5px 5px 15px;
+}
+.content{
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  align-items: flex-start;
+}
+
+.modo_preparo_1{
+  padding: 50px;
+}
+
+.title_2{
+  padding: 0 50px 30px 50px;
+}
+
+.img_links{
+  padding: 0 50px 30px 50px;
+}
+
+
 
 
 
