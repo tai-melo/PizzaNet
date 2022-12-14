@@ -1,0 +1,49 @@
+<<<<<<<< HEAD:git.txt
+**GIT
+git config user.name "nome"                     >> Definir o nome de usuário para todos os projetos neste computador
+git config user.name "nome" --global            >> Definir o nome do usuário que usará Git neste projeto.
+git config user.email "email"                   >> Definir o email do usuário que usará Git neste projeto.
+git config user email "email" --global          >> Definir o email do usuário para todos os projetos neste computador.
+git init                                        >> Adicionar um repositório vazio.
+git add --all (ou -A)                           >> Adicona todos os arquivos atuais (novos, atualizados e deletados).
+git add .                                       >> Adiciona vários arquivos.
+git add -A                                      >> Adiconar arquivo 2.
+git add "nome do arquivo"                       >> Adicona um único arquivo.
+git commit -m "descrição"                       >> Commit.
+git log                                         >> Mostra os últimos commits do repositório atual.
+git checkout "nome da branch"                   >> Mesclar arquivo com outras Branchs -> alternar para o branch no qual você quer que o merge aconteça.
+git merge "nome da branch"                                                            -> especifique o nome do outro branch para colocar nesse branch.
+git merge --abort                               >> Aborta o processo de merge em casos em que Git identifica um conflito, retornando o projeto ao seu estatdo à tentativa de merge.
+git status                                      >> Mostrar arquivos e pastas que estão n área de staging.
+git branch                                      >> Exibe a lista de branches disponíveis e destaca a branch atual.
+git branch "nome da branch"                     >> Criar uma nova branch.
+
+**GITHUB
+git push                                        >> Enviar commits do nosso repositório local ao repositório  remoto.
+git pull                                        >> Atualizar nosso repositório local com as últimas informações no repositório remoto.
+git clone "link do repositório"                 >> Criar um repositório local a partir um repositório remoto.
+========
+**GIT
+git config user.name "nome"                     >> Definir o nome de usuário para todos os projetos neste computador
+git config user.name "nome" --global            >> Definir o nome do usuário que usará Git neste projeto.
+git config user.email "email"                   >> Definir o email do usuário que usará Git neste projeto.
+git config user email "email" --global          >> Definir o email do usuário para todos os projetos neste computador.
+git init                                        >> Adicionar um repositório vazio.
+git add --all (ou -A)                           >> Adicona todos os arquivos atuais (novos, atualizados e deletados).
+git add .                                       >> Adiciona vários arquivos.
+git add -A                                      >> Adiconar arquivo 2.
+git add "nome do arquivo"                       >> Adicona um único arquivo.
+git commit -m "descrição"                       >> Commit.
+git log                                         >> Mostra os últimos commits do repositório atual.
+git checkout "nome da branch"                   >> Mesclar arquivo com outras Branchs -> alternar para o branch no qual você quer que o merge aconteça.
+git merge "nome da branch"                                                            -> especifique o nome do outro branch para colocar nesse branch.
+git merge --abort                               >> Aborta o processo de merge em casos em que Git identifica um conflito, retornando o projeto ao seu estatdo à tentativa de merge.
+git status                                      >> Mostrar arquivos e pastas que estão n área de staging.
+git branch                                      >> Exibe a lista de branches disponíveis e destaca a branch atual.
+git branch "nome da branch"                     >> Criar uma nova branch.
+
+**GITHUB
+git push                                        >> Enviar commits do nosso repositório local ao repositório  remoto.
+git pull                                        >> Atualizar nosso repositório local com as últimas informações no repositório remoto.
+git clone "link do repositório"                 >> Criar um repositório local a partir um repositório remoto.
+git remote show origin                          >> Verificar se nosso repositório local está atualizado com o repositório remoto.
