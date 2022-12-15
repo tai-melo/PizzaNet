@@ -1,0 +1,27 @@
+/**/
+
+
+.noticias_main {
+    text-decoration: none;
+    
+}
+#noticias_main_title{
+    margin: 100px ; /*top right bottom left*/
+    
+    display: flex;
+}
+
+
+
+#link-noticias {
+    text-decoration: none;
+    border: solid;
+    height: 117px;
+       
+    display: flex;
+    gap: 20px;   
+}
+
+a {
+    text-decoration: none;
+}
