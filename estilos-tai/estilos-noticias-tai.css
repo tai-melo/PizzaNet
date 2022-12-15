@@ -1,27 +1,52 @@
+@charset "UTF-8";
 /**/
 
-
 .noticias_main {
-    text-decoration: none;
-    
+    width: 100vh;
+         
 }
+
 #noticias_main_title{
     margin: 100px ; /*top right bottom left*/
     
-    display: flex;
 }
 
-
-
-#link-noticias {
-    text-decoration: none;
-    border: solid;
+#link-noticias {  /*essa são as Divs*/
+    background-color: rgb(248, 245, 245);
+    border: 2px solid rgb(233, 233, 233);
     height: 117px;
-       
+    width: 800px;
+    margin-bottom: 20px;
+    
     display: flex;
-    gap: 20px;   
+    justify-content: space-between ; /*NAO PEGOU - quero que fique no centro, mas se coloco  center, bagunça tudo*/
+    gap: 16px; /*NAO PEGOU*/
+    text-decoration: none; /*NAO PEGOU*/
+    border-radius: 10px;
 }
 
-a {
+.main-noticias-paragrafo {
     text-decoration: none;
+    color: black;
+}
+
+.main-noticias-paragrafo-a {
+    text-decoration: none;
+    text-align: center; /*NAO PEGOU*/
+    margin-left: 50px;
+    color: #000;
+    font-weight: bold;
+}
+
+.main-noticias-paragrafo-a:hover {
+    text-decoration: none; /*NÃO  PEGOU*/
+    color:black;
+
+}
+
+.imagem-pizza-fundo-direita-img {
+    display: flex;
+    
+    align-items: stretch;
+    
 }
