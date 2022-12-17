@@ -1,5 +1,10 @@
 @charset "UTF-8";
-/**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 #body {
@@ -42,8 +47,30 @@
 
 }
 
-#botao-carregar-div {
+article#content {
+    width: 900px;
+    max-height: 275px;
+    overflow: hidden;
+    /*esconde o que excede da box*/
+    transition: max-height 1s
+}
+
+article.open {
+    /*classe para abrir o article. Usando a função JS*/
+    background-color: rgb(206, 215, 216);
+    /*NÃO TÁ ABRINDO !*/
+    max-height: 1000px;
+    transition: max-height 0.9s
+}
+
+
+
+#botao-mais {
+    border: none;
     color: white;
+    font-size: 1em;
+    /*1em = 16px*/
+    font-weight: bold;
     background-color: #4A58D5;
     width: 110px;
     height: 30px;
