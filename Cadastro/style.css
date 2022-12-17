@@ -123,7 +123,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  row-gap: 45px;
+  row-gap: 35px;
 }
 
 .inputs {
@@ -140,7 +140,7 @@ body {
 }
 
 #btn-submit {
-  margin-top: 20px;
+  margin-top: 16px;
   color: white;
   border-radius: 25px;
   width: 35%;
@@ -157,6 +157,7 @@ body {
 }
 
 #span-texts {
+  height: 3vh;
   font-size: 18px;
   color: #FF0B0B;
   display: flex;
@@ -176,7 +177,7 @@ footer {
   padding-top: 1vh;
   background-color: #005027;
   color: #fff;
-  min-height: 12vh;
+  height: 12vh;
   padding-bottom: 0px;
 }
 
@@ -185,6 +186,7 @@ footer {
 }
 
 .footer-body {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding-left: 10px;
