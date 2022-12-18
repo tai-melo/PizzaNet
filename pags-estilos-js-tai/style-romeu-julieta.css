@@ -1,13 +1,14 @@
 * {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 
 
 #body {
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-titulo-principal {
@@ -36,17 +37,44 @@
     box-shadow: 2px 3px 6px black;
 }
 
-.subtitulo-ingredientes{
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-bottom: 50px;
+
+ .subtitulo-ingredientes{
+    margin-left: 318px;
+    margin-top: 90px;    
+    margin-bottom: 60px;
+   
+} 
+
+.section-ingredientes {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
 }
 
-.subtitulo-recheio, .subtitulo-cobertura, .subtitulo-massa {
- background-color: beige;
- display: flex;
- flex-direction: column-reverse
+.romeuejulieta-recheio, .romeuejulieta-cobertura, .romeuejulieta-massa {
+    margin-right: 60px;
 }
 
+.subtitulo-massa, .subtitulo-cobertura, .subtitulo-recheio {
+    margin-bottom: 30px;
+}
 
+.subtitulo-modo-de-preparo {
+    margin-left: 318px;
+    margin-top: 90px;    
+    margin-bottom: 60px;
+}
 
+.section-modo-preparo-massa-pizza {
+    width: 70%;
+    height: 550px;
+    margin-left:318px ;
+    background-color: beige;
+    
+}
+
+.subtitulo-modo-massa, .subtitulo-modo-pizza {
+    
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
