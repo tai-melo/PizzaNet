@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+#body {
+    height: 100vh;
+    width: 100%;
+}
+
+.main-titulo-principal {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+}
+
+.section-imagem-romeu-julieta {
+    display: flex;
+    justify-content: center;
+}
+
+#imagem-pizza-romeu-julieta { 
+    margin: 35px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.section-imagem-video-chef {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-video-chef {
+    margin: 20px;
+    box-shadow: 2px 3px 6px black;
+}
+
+.subtitulo-ingredientes{
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.subtitulo-recheio, .subtitulo-cobertura, .subtitulo-massa {
+ background-color: beige;
+ display: flex;
+ flex-direction: column-reverse
+}
+
+
+
