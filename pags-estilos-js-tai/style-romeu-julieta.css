@@ -24,17 +24,19 @@
 
 #imagem-pizza-romeu-julieta { 
     margin: 35px;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 10px rgb(80, 80, 80);
+    
 }
 
 .section-imagem-video-chef {
     display: flex;
     justify-content: center;
+    
 }
 
 .imagem-video-chef {
     margin: 20px;
-    box-shadow: 2px 3px 6px black;
+    box-shadow: 2px 2px 8px rgb(82, 81, 81);
 }
 
 
@@ -69,12 +71,27 @@
     width: 70%;
     height: 550px;
     margin-left:318px ;
-    background-color: beige;
-    
+        
 }
 
 .subtitulo-modo-massa, .subtitulo-modo-pizza {
     
     margin-top: 65px;
     margin-bottom: 30px;
+}
+
+
+.subtitulo-mais-receitas-menu-horizontal {
+    margin-left: 318px;
+    margin-bottom: 60px;
+}
+
+.section-mais-receitas-menu-horizontal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.span-imagem-arrow-left, .span-imagem-pizza-lowcarb-couveflor, .span-imagem-pizza-beterraba, .span-imagem-pizza-napolitana, .span-imagem-pizza-chocolate, .span-imagem-arrow-right {
+   margin: 0 25px 10px;
 }
