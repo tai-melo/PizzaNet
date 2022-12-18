@@ -70,3 +70,85 @@
 .maisReceitas_imagens a img, .maisReceitas_imagens img{
     cursor: pointer;
 }
+
+
+
+
+/* responsividade */
+
+
+@media (max-width: 1200px) {
+
+    .imagem-pizza{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .imagem-pizza img{
+        width: 50%;
+    }
+
+    .ingredientes{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .ingredientes_text{
+        margin: 25px 0;
+    }
+    .modoPreparo h3{
+        text-align: center;
+        margin: 25px 0;
+    }
+    .modoPreparo_receita{
+        margin: 0 150px;
+    }
+
+
+    .maisReceitas_imagens a{
+        padding: 10px;
+    }
+
+
+    .maisReceitas_imagens img{
+        width: 40px;
+    }
+    .maisReceitas_imagens a img{
+        width: 125px;
+        height: 80px;
+    }
+}
+
+
+@media( max-width: 800px){
+
+    .image_background{
+        background-image: none ;
+    }
+
+
+    .maisReceitas_imagens_receitas{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+
+    .ingredientes_imagem a img{
+        /* width: 50%; */
+        width: 50%;
+    }
+    .ingredientes_imagem{
+        text-align: center;
+    }
+
+    .modoPreparo_receita{
+        margin: 0 20px;
+        width: 80%;
+    }
+
+    .ingredientes_text{
+        margin: 0;
+        text-align: center;
+    }
+}
