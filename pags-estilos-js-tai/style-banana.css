@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+#body {
+    background-image: url(../assets\ Develop/pizza_vertical_rawpixel_350-opacidade-lv-10.png) ;
+    background-repeat: repeat-y;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-titulo-principal {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+}
+
+.section-imagem-banana-nevada{
+    display: flex;
+    justify-content: center;
+}
+
+#imagem-pizza-banana-nevada {
+    margin: 35px;
+    box-shadow: 3px 3px 10px rgb(80, 80, 80);
+    
+}
+
+.section-imagem-banana-video-chef {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.subtitulo-ingredientes {
+    margin-left: 300px;
+    margin-top: 90px;    
+    margin-bottom: 60px;
+   
+}
+
+.section-ingredientes {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.cobertura-banana-nevada {
+    margin-left: 30px;
+}
+
+
+.subtitulo-modo-de-preparo {
+    margin-left: 300px;
+    margin-top: 60px;    
+    margin-bottom: 60px;
+}
+
+.section-modo-preparo-massa-e-pizza {
+    width: 70%;
+    height: 600px;
+    margin-left:300px ;
+}
+
+.subtitulo-modo-pizza, .subtitulo-modo-massa {
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+
+
+.subtitulo-mais-receitas-menu-horizontal {
+    margin-left: 300px;
+    margin-bottom: 60px;
+}
+
+.section-mais-receitas-menu-horizontal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.span-imagem-arrow-left, .span-imagem-pizza-lowcarb-couveflor, .span-imagem-pizza-beterraba, .span-imagem-pizza-napolitana, .span-imagem-pizza-chocolate, .span-imagem-arrow-right {
+   margin: 0 25px 10px;
+}
