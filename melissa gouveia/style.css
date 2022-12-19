@@ -84,14 +84,20 @@
 }
 
 .ilustration_1{
-  width: 300px;
+  width: 700px;
   box-shadow: 5px 5px 15px;
 }
-.content{
+
+
+.dica{
+  padding: 60px 0px 60px 0px;
   display: flex;
-  justify-content: flex-start;
-  gap: 100px;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon_1{
+  padding-right: 50px;
 }
 
 .modo_preparo_1{
