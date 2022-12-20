@@ -18,7 +18,7 @@
 .main-titulo-principal {
     display: flex;
     justify-content: center;
-    margin: 35px;
+    margin: 10vh;
 }
 
 .section-imagem-romeu-julieta {
@@ -44,11 +44,11 @@
 }
 
 
- .subtitulo-ingredientes{
-    margin-left: 318px;
+ .subtitulo-ingredientes-banana-nevada {
+    background-color: blue;
+    margin-left: 340px;
     margin-top: 90px;    
-    margin-bottom: 60px;
-   
+    margin-bottom: 59px;
 } 
 
 .section-ingredientes {

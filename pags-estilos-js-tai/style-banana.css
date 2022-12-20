@@ -7,6 +7,7 @@
     background-image: url(../assets\ Develop/pizza_vertical_rawpixel_350-opacidade-lv-10.png) ;
     background-repeat: repeat-y;
     background-position: right;
+    background-size: 50vh;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -36,12 +37,14 @@
     
 }
 
-.subtitulo-ingredientes {
-    margin-left: 300px;
+.section-subtitulo-ingredientes-banana-nevada{
+    
+    margin-left: 27vh;
     margin-top: 90px;    
     margin-bottom: 60px;
    
 }
+
 
 .section-ingredientes {
     display: flex;
@@ -55,7 +58,7 @@
 
 
 .subtitulo-modo-de-preparo {
-    margin-left: 300px;
+    margin-left: 27vh;
     margin-top: 60px;    
     margin-bottom: 60px;
 }
@@ -63,7 +66,7 @@
 .section-modo-preparo-massa-e-pizza {
     width: 70%;
     height: 600px;
-    margin-left:300px ;
+    margin-left:27vh ;
 }
 
 .subtitulo-modo-pizza, .subtitulo-modo-massa {
@@ -73,7 +76,7 @@
 
 
 .subtitulo-mais-receitas-menu-horizontal {
-    margin-left: 300px;
+    margin-left: 27vh;
     margin-bottom: 60px;
 }
 
@@ -86,3 +89,104 @@
 .span-imagem-arrow-left, .span-imagem-pizza-lowcarb-couveflor, .span-imagem-pizza-beterraba, .span-imagem-pizza-napolitana, .span-imagem-pizza-chocolate, .span-imagem-arrow-right {
    margin: 0 25px 10px;
 }
+
+/* Header - home pricing cardapio*/
+@media (max-width: 1300px){
+    .pages1 {
+        margin-left: 25px;
+        font-weight: 300;
+        font-size: 10px;
+        height: 8vh;
+        gap: 2px 0px;
+        background-color: white;
+        
+    }
+    #imgLogo {
+        width: 150px;
+        height: 40px ;
+    }
+
+}
+
+/* Main ---*/
+@media(max-width: 1000px){
+    .section-imagem-banana-nevada{
+        width: 70vh;
+        height: 55vh;
+        margin-left: 30vh;
+    }
+    .section-imagem-banana-video-chef{
+        /* width:20vh;
+        height:18vh;
+        margin-left: 35vh;
+        margin-bottom: 20px; */
+    }
+    #imagem-video-chef-jose{
+        width:60vh;
+        height:40vh;
+        margin-left: 3vh;
+        margin-bottom: 10px;
+    }
+    .section-subtitulo-ingredientes-banana-nevada{
+        margin-top: 5vh;
+        margin-bottom: 20px;
+        margin-left: 50vh;
+        background-color: beige;
+        width: 35vh;
+        border-radius: 30px;
+        text-align: center;
+        padding: 2px
+    }
+    .section-ingredientes{
+        display: flex;
+        flex-direction: column;
+    }
+    .massa-banana-nevada{
+        margin-left:5vh ;
+    } 
+    .subtitulo-modo-de-preparo{
+        margin-top: 30px;
+        margin-bottom: 5px;
+        margin-left: 50vh;
+        background-color: beige;
+        width: 35vh;
+        border-radius: 30px;
+        text-align: center;
+        padding: 2px;
+       
+    }
+    .subtitulo-modo-massa{
+        margin-top: 20px;
+    }
+    .section-modo-preparo-massa-e-pizza{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        height: 86vh;
+       
+    }
+    .subtitulo-mais-receitas-menu-horizontal{
+        margin-top: 30px;
+        margin-bottom: 8px;
+        margin-left: 50vh;
+        background-color: beige;
+        width: 35vh;
+        border-radius: 30px;
+        text-align: center;
+        padding: 2px;
+       
+    }
+    .section-mais-receitas-menu-horizontal{
+        margin-top: 30px;
+    }
+    .mais-receitas-miniaturas-do-menu{
+        width: 8vh;
+        height: 10hv;
+    }
+}
+
+@media(max-width:860px){ 
+ /*colocar aqui para tamanhos de tablets*/
+}
+
+
+/*depois coloque tamanho para celulares*/

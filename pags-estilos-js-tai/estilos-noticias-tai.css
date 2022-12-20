@@ -10,8 +10,11 @@
 #body {
     height: 100vh;
     width: 100%;
-    background-image: url("assets develop/background-1336-751.png")
-        /*Nao Pegou*/
+    background-image: url(../assets\ Develop/pizza_vertical_rawpixel_350-opacidade-lv-10.png);
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: 50vh;
+    
 }
 
 #noticias_main {
@@ -57,7 +60,7 @@ article#content {
 
 article.open {
     /*classe para abrir o article. Usando a função JS*/
-    background-color: rgb(206, 215, 216);
+    background-color: rgb(249, 250, 250);
     /*NÃO TÁ ABRINDO !*/
     max-height: 1000px;
     transition: max-height 0.9s
