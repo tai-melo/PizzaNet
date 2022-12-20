@@ -4,6 +4,8 @@
 }
 
 #body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 400;
     background-image: url(../assets\ Develop/pizza_vertical_rawpixel_350-opacidade-lv-10.png) ;
     background-repeat: repeat-y;
     background-position: right;
@@ -39,7 +41,7 @@
 
 .section-subtitulo-ingredientes-banana-nevada{
     
-    margin-left: 27vh;
+    margin-left: 23vh;
     margin-top: 90px;    
     margin-bottom: 60px;
    
@@ -58,7 +60,7 @@
 
 
 .subtitulo-modo-de-preparo {
-    margin-left: 27vh;
+    margin-left: 23vh;
     margin-top: 60px;    
     margin-bottom: 60px;
 }
@@ -66,7 +68,7 @@
 .section-modo-preparo-massa-e-pizza {
     width: 70%;
     height: 600px;
-    margin-left:27vh ;
+    margin-left:23vh ;
 }
 
 .subtitulo-modo-pizza, .subtitulo-modo-massa {
@@ -76,7 +78,7 @@
 
 
 .subtitulo-mais-receitas-menu-horizontal {
-    margin-left: 27vh;
+    margin-left: 23vh;
     margin-bottom: 60px;
 }
 

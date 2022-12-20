@@ -44,9 +44,8 @@
 }
 
 
- .subtitulo-ingredientes-banana-nevada {
-    background-color: blue;
-    margin-left: 340px;
+.subtitulo-ingredientes-romeu-julieta {
+    margin-left: 30vh;
     margin-top: 90px;    
     margin-bottom: 59px;
 } 
@@ -66,7 +65,7 @@
 }
 
 .subtitulo-modo-de-preparo {
-    margin-left: 318px;
+    margin-left: 30vh;
     margin-top: 90px;    
     margin-bottom: 60px;
 }
@@ -74,7 +73,7 @@
 .section-modo-preparo-massa-pizza {
     width: 70%;
     height: 550px;
-    margin-left:318px ;
+    margin-left:30vh ;
         
 }
 
@@ -86,7 +85,7 @@
 
 
 .subtitulo-mais-receitas-menu-horizontal {
-    margin-left: 318px;
+    margin-left: 30vh;
     margin-bottom: 60px;
 }
 
