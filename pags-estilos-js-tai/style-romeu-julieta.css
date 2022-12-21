@@ -18,7 +18,7 @@
 .main-titulo-principal {
     display: flex;
     justify-content: center;
-    margin: 35px;
+    margin: 10vh;
 }
 
 .section-imagem-romeu-julieta {
@@ -44,11 +44,10 @@
 }
 
 
- .subtitulo-ingredientes{
-    margin-left: 318px;
+.subtitulo-ingredientes-romeu-julieta {
+    margin-left: 30vh;
     margin-top: 90px;    
-    margin-bottom: 60px;
-   
+    margin-bottom: 59px;
 } 
 
 .section-ingredientes {
@@ -66,7 +65,7 @@
 }
 
 .subtitulo-modo-de-preparo {
-    margin-left: 318px;
+    margin-left: 30vh;
     margin-top: 90px;    
     margin-bottom: 60px;
 }
@@ -74,7 +73,7 @@
 .section-modo-preparo-massa-pizza {
     width: 70%;
     height: 550px;
-    margin-left:318px ;
+    margin-left:30vh ;
         
 }
 
@@ -86,7 +85,7 @@
 
 
 .subtitulo-mais-receitas-menu-horizontal {
-    margin-left: 318px;
+    margin-left: 30vh;
     margin-bottom: 60px;
 }
 
