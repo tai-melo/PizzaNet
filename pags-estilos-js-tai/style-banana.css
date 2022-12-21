@@ -16,6 +16,20 @@
     flex-direction: column;
 }
 
+.imagem-banana-nevada{
+    box-shadow: 5px 5px 15px black;
+    width: 998px;
+    
+}
+#imagem-pizza-banana-nevada{
+    width :60px;
+}
+
+#icon{
+    width :60px;
+}
+
+
 .main-titulo-principal {
     display: flex;
     justify-content: center;
@@ -25,13 +39,42 @@
 .section-imagem-banana-nevada{
     display: flex;
     justify-content: center;
+    
 }
 
 #imagem-pizza-banana-nevada {
     margin: 35px;
-    box-shadow: 3px 3px 10px rgb(80, 80, 80);
-    
+ 
+} 
+
+
+
+.dica{
+    padding: 60px 0px 60px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+  }
+
+.subdica{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.description{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+   
+ .description_link{
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+
 
 .section-imagem-banana-video-chef {
     display: flex;
@@ -40,45 +83,44 @@
 }
 
 .section-subtitulo-ingredientes-banana-nevada{
-    
-    margin-left: 23vh;
-    margin-top: 90px;    
-    margin-bottom: 60px;
+    margin-left: 26vh;
+    margin-top: 20px;    
+    margin-bottom: 28px;
    
 }
 
 
 .section-ingredientes {
     display: flex;
-    flex-direction: row;
-    justify-content:center;
+    flex-direction: column;
+    margin-left: 26vh;   
 }
 
 .cobertura-banana-nevada {
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 
 .subtitulo-modo-de-preparo {
-    margin-left: 23vh;
-    margin-top: 60px;    
-    margin-bottom: 60px;
+    margin-left: 26vh;
+    margin-top: 30px;    
+    margin-bottom: 28px;
 }
 
 .section-modo-preparo-massa-e-pizza {
     width: 70%;
-    height: 600px;
-    margin-left:23vh ;
+    height: 530px;
+    margin-left:26vh ;
 }
 
 .subtitulo-modo-pizza, .subtitulo-modo-massa {
-    margin-top: 65px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 
 .subtitulo-mais-receitas-menu-horizontal {
-    margin-left: 23vh;
+    margin-left: 26vh;
     margin-bottom: 60px;
 }
 
@@ -91,6 +133,11 @@
 .span-imagem-arrow-left, .span-imagem-pizza-lowcarb-couveflor, .span-imagem-pizza-beterraba, .span-imagem-pizza-napolitana, .span-imagem-pizza-chocolate, .span-imagem-arrow-right {
    margin: 0 25px 10px;
 }
+
+
+
+/*MEDIA QUERIES -----------------------------*/
+
 
 /* Header - home pricing cardapio*/
 @media (max-width: 1300px){

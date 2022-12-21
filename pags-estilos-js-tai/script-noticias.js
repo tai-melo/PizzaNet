@@ -10,5 +10,6 @@ function mostrarMais() {
     } else {
         article.className = "open";
         button.innerHTML = "Mostrar menos";
+       
     }
 }

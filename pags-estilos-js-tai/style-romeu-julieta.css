@@ -24,40 +24,57 @@
 .section-imagem-romeu-julieta {
     display: flex;
     justify-content: center;
+
 }
 
 #imagem-pizza-romeu-julieta { 
-    margin: 35px;
     box-shadow: 3px 3px 10px rgb(80, 80, 80);
+    width: 998px;
     
 }
 
-.section-imagem-video-chef {
+
+.dica{
+    padding: 60px 0px 60px 0px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+  }
+
+.subdica{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.imagem-video-chef {
-    margin: 20px;
-    box-shadow: 2px 2px 8px rgb(82, 81, 81);
+.description{
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
+.description_link{
+    padding-top: 15px;
+    padding-left: 15px;
+  }
 
 .subtitulo-ingredientes-romeu-julieta {
-    margin-left: 30vh;
-    margin-top: 90px;    
-    margin-bottom: 59px;
+    margin-left: 26vh;
+    margin-top: 5px;    
+    margin-bottom: 30px;
 } 
 
 .section-ingredientes {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:center;
+    margin-left: 26vh
 }
 
 .romeuejulieta-recheio, .romeuejulieta-cobertura, .romeuejulieta-massa {
-    margin-right: 60px;
+    margin-bottom: 20px;
 }
 
 .subtitulo-massa, .subtitulo-cobertura, .subtitulo-recheio {
@@ -65,27 +82,27 @@
 }
 
 .subtitulo-modo-de-preparo {
-    margin-left: 30vh;
-    margin-top: 90px;    
-    margin-bottom: 60px;
+    margin-left: 26vh;
+    margin-top: 40px;    
+    margin-bottom: 20px;
 }
 
 .section-modo-preparo-massa-pizza {
     width: 70%;
     height: 550px;
-    margin-left:30vh ;
+    margin-left:26vh ;
         
 }
 
 .subtitulo-modo-massa, .subtitulo-modo-pizza {
     
-    margin-top: 65px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 
 .subtitulo-mais-receitas-menu-horizontal {
-    margin-left: 30vh;
+    margin-left: 26vh;
     margin-bottom: 60px;
 }
 
