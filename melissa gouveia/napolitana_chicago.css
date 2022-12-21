@@ -50,6 +50,112 @@
   font-size: 25px;
 }
 
+
+.title_1{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.ilustration{
+  display: flex;
+  justify-content: center;
+}
+
+.ilustration_1{
+  width: 998px;
+  box-shadow: 5px 5px 15px;
+}
+
+.dica{
+  padding: 60px 0px 60px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.subdica{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+.icon{
+  padding-right: 50px;
+}
+
+.subdica_link{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+.description{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.description_link{
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.ingredientes{
+  padding-left: 180px;
+}
+
+.display_ingredientes{
+  display: flex;
+  flex-direction: row;
+}
+
+.ingradientes_1{
+  padding-right: 80px;
+}
+.modo_preparo_1{
+  padding: 50px 180px;
+}
+
+.links{
+  padding: 0px 130px;
+}
+
+.title_2{
+  padding: 0 50px 30px 50px;
+}
+
+.img_links{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+
+footer{
+  background-color: #005027;
+  color: #fff;
+}
+
+.footer-body{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px 0;
+}
+
+@media(max-width: 500px){
+  .footer-body {
+    display: flex;
+    padding: 30px 50px 0;
+    flex-direction: column;
+    text-align: center;
+    }
+    .icones{
+      margin: 0 0 15px 0;
+    }
+}
 @media(max-width: 1120px){
   .pages1{
     gap: 15px;
@@ -73,103 +179,4 @@
     text-align: start;
     gap: 10px;
   }
-}
-
-.title_1{
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.ilustration{
-  display: flex;
-  justify-content: center;
-}
-
-.ilustration_1{
-  width: 998px;
-  box-shadow: 5px 5px 15px;
-}
-
-.dica{
-  padding: 60px 0px 60px 0px;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 30px;
-}
-
-
-.subdica{
-  display: flex;
-  flex-direction:row;
-  align-items: center;
-}
-
-.icon{
-  padding-right: 50px;
-}
-
-.subdica_link{
-  display: flex;
-  flex-direction:row;
-  align-items: center;
-}
-.description{
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.description_link{
-  padding-top: 10px;
-  padding-left: 15px;
-}
-
-.ingredientes{
-  padding-left: 180px;
-}
-.modo_preparo_1{
-  padding: 50px 180px;
-}
-
-.title_2{
-  padding: 0 50px 30px 50px;
-}
-
-.img_links{
-  padding: 0 50px 30px 50px;
-}
-
-
-
-
-
-
-
-/* footer */
-
-footer{
-  background-color: #005027;
-  color: #fff;
-}
-
-.footer-body{
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 50px 0;
-}
-
-@media(max-width: 500px){
-  .footer-body {
-    display: flex;
-    padding: 30px 50px 0;
-    flex-direction: column;
-    text-align: center;
-    }
-    .icones{
-      margin: 0 0 15px 0;
-    }
 }
