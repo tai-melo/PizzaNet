@@ -77,21 +77,26 @@
 
 .title_1{
   padding: 50px;
+  display: flex;
+  justify-content: center;
 }
 
-.content{
-  padding-left: 50px;
+.ilustration{
+  display: flex;
+  justify-content: center;
 }
 
 .ilustration_1{
-  width: 700px;
+  width: 998px;
   box-shadow: 5px 5px 15px;
 }
 
 .dica{
   padding: 60px 0px 60px 0px;
+  
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   width: 100%;
   gap: 30px;
@@ -122,8 +127,12 @@
   padding-top: 10px;
   padding-left: 15px;
 }
+
+.ingredientes{
+  padding-left: 180px;
+}
 .modo_preparo_1{
-  padding: 50px;
+  padding: 50px 180px;
 }
 
 .title_2{
