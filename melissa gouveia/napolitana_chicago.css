@@ -118,6 +118,10 @@
   padding: 50px 180px;
 }
 
+.justify{
+  text-align: justify;
+}
+
 .links{
   padding: 0px 130px;
 }
