@@ -50,9 +50,13 @@
 
 }
 
+.imagem-artigo {
+    border-radius: 10px 0px 0px 10px; /*top-left, top-right, bottom-right, bottom-left/
+}
+
  article#content {
     width: 900px;
-    max-height: 270px; /* PARA O READ MORE max-height: 275px; */
+    max-height: 1000px; /* 270px -PARA O READ MORE max-height: 275px; */
     overflow: hidden;  /*OVERFLOW, esconde o que excede da box*/
     transition: max-height 1s
 }
@@ -81,11 +85,11 @@ article.open {
 
 #botao-mais {
     border: none;
-    color: white;
+    color: black;
     font-size: 1em;
     /*1em = 16px*/
     font-weight: bold;
-    background-color: #4A58D5;
+    background-color: #26262918;
     width: 130px;
     height: 50px;
     border-radius: 40px;
