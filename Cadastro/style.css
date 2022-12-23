@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {
-  font-family: 'Rubik', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
+#body {
   height: 100vh;
   width: 100%;
 }
 
 #header {
   background-color: #E63030;
-  height: 12vh;
+  height: 70px;
   padding: 0px;
 }
 
@@ -61,35 +60,6 @@ body {
 
 .bi-bag {
   font-size: 25px;
-}
-
-@media(max-width: 1120px) {
-  .pages1 {
-    gap: 15px;
-    margin-right: 15vh;
-  }
-}
-
-@media(max-width: 990px) {
-  .pages1 {
-    column-gap: 100%;
-    margin-right: 0vh;
-  }
-
-  .pages2 {
-    column-gap: 100%;
-  }
-
-  #offcanvasNavbar {
-    width: 70%;
-  }
-
-  .navegacao {
-    width: 100%;
-    align-items: flex-start;
-    text-align: start;
-    gap: 10px;
-  }
 }
 
 /* Main */
@@ -174,25 +144,14 @@ body {
 /* footer */
 
 footer {
-  padding-top: 1vh;
   background-color: #005027;
   color: #fff;
-  height: 12vh;
-  padding-bottom: 0px;
-}
-
-.copyright {
-  height: 0vh;
 }
 
 .footer-body {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
-  align-items: flex-start;
-  height: 5vh;
+  padding: 30px 50px 0;
 }
 
 @media(max-width: 500px) {
@@ -205,5 +164,34 @@ footer {
 
   .icones {
     margin: 0 0 15px 0;
+  }
+}
+
+@media(max-width: 1120px) {
+  .pages1 {
+    gap: 15px;
+    margin-right: 15vh;
+  }
+}
+
+@media(max-width: 990px) {
+  .pages1 {
+    column-gap: 100%;
+    margin-right: 0vh;
+  }
+
+  .pages2 {
+    column-gap: 100%;
+  }
+
+  #offcanvasNavbar {
+    width: 70%;
+  }
+
+  .navegacao {
+    width: 100%;
+    align-items: flex-start;
+    text-align: start;
+    gap: 10px;
   }
 }
