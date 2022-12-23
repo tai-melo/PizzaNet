@@ -97,6 +97,13 @@
   justify-content: center;
   align-items: center;
 }
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 93%;
+}
 
 .retangulo {
   height: 64vh;
