@@ -10,12 +10,24 @@
 #body {
     height: 100vh;
     width: 100%;
+    font-size: 400;
     background-image: url(../assets\ Develop/pizza_vertical_rawpixel_350-opacidade-lv-10.png);
     background-repeat: repeat-y;
     background-position: right;
     background-size: 50vh;
     
 }
+/* #header{
+    background-color: #E63030;
+    height: 70px;
+    padding: 0px;
+}
+#imgLogo{
+    position: relative;
+    width: 170px;
+    height: 53px;
+    margin-bottom: 10px;
+} */
 
 #noticias_main {
     display: flex;
