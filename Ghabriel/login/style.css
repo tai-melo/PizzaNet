@@ -6,67 +6,74 @@
   box-sizing: border-box;
 }
 
+.a {
+  text-decoration: none;
+  color: #000;
+}
+
 #body {
   height: 100vh;
   width: 100%;
 }
 
 #header {
-  background-color: #E63030;
-  height: 70px;
-  padding: 0px;
+  background-color: #fff;
+  height: 12vh;
+  border-bottom-color: #FF0B0B;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
 }
 
 #imgLogo {
   position: relative;
-  width: 170px;
-  height: 53px;
+  width: 140px;
+  height: 50px;
   margin-bottom: 10px;
 }
 
 .navegacao {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 0px;
+  justify-content: space-between;
 }
 
 .pages1 {
-  gap: 25px;
-  margin-right: 30vh;
+  gap: 15px;
+  margin-left: 5vh;
 }
 
-.textHover {
+#whats {
+  color: #000;
+  border-bottom: 0px;
+  cursor: no-drop;
+}
+
+.text {
   font-weight: 400;
   font-size: 18px;
-  height: 6vh;
-}
-
-.textHover:hover {
-  border-bottom: 2px solid black;
-}
-
-.btns {
-  font-weight: 400;
-  font-size: 18px;
+  border-width: 0;
   background-color: transparent;
-  border: 0px;
 }
 
-.btns:hover {
-  border-bottom: 2px solid black;
+.text:hover {
+  color: #FF0B0B;
+  border-bottom: 2px solid #FF0B0B;
 }
 
 .bi-bag {
   font-size: 25px;
 }
 
+.bi-bag:hover {
+  color: #FF0B0B;
+}
 
 /* Main */
 
 #main-Content {
-  height: 76vh;
+  height: 75vh;
   width: 100%;
 }
 
@@ -105,7 +112,25 @@
   border-bottom: 2px solid #FF0B0B;
 }
 
-.inputs:focus {
+#password {
+  font-size: 20px;
+  background-color: transparent;
+  width: 90%;
+  border: none;
+}
+
+#eye {
+  font-size: 23px;
+}
+
+#buttonShow {
+  background-color: transparent;
+  border: none;
+}
+
+
+.inputs:focus,
+#password:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
 }
@@ -137,63 +162,142 @@
   cursor: pointer;
 }
 
+.texts {
+  color: #FF0B0B;
+  text-decoration: none;
+}
+
 .texts:hover {
   color: #a12828;
 }
 
 
-
 /* footer */
 
-footer {
-  background-color: #005027;
-  color: #fff;
-}
-
 .footer-body {
+  background-color: #ECECEC;
+  color: #000;
+  border-top-color: #999;
+  border-top-width: 3px;
+  border-top-style: solid;
   display: flex;
-  justify-content: space-between;
-  padding: 30px 50px 0;
+  height: 13vh;
+  flex-wrap: wrap;
+  font-size: 17.5px;
 }
 
-@media(max-width: 500px) {
-  .footer-body {
-    display: flex;
-    padding: 30px 50px 0;
-    flex-direction: column;
-    text-align: center;
-  }
+#footerIcons {
+  width: 100%;
+  display: flex;
+  margin: 10px 10px 0px 10px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .icones {
-    margin: 0 0 15px 0;
-  }
+.copyright {
+  width: 100%;
+}
+
+#trabalhe,
+#textFooter {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#textFooter:hover {
+  color: #999;
+}
+
+#trabalhe:hover {
+  color: #999;
 }
 
 @media(max-width: 1120px) {
   .pages1 {
-    gap: 15px;
-    margin-right: 15vh;
+    gap: 5px;
+    margin-left: 0vh;
   }
 }
 
 @media(max-width: 990px) {
-  .pages1 {
-    column-gap: 100%;
-    margin-right: 0vh;
+
+  .text,
+  .whtas-icon,
+  .bi-bag,
+  #whats {
+    color: #fff;
   }
 
+  .whtas-icon {
+    padding-right: 10px;
+  }
+
+  .pages1,
   .pages2 {
-    column-gap: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .text:hover,
+  .bi-bag:hover {
+    color: #999;
+    border: 0px;
   }
 
   #offcanvasNavbar {
-    width: 70%;
+    width: 30%;
+    background-color: rgba(48, 44, 44, 0.4);
+  }
+}
+
+@media(max-width: 605px) {
+
+  #offcanvasNavbar {
+    width: 40%;
   }
 
-  .navegacao {
-    width: 100%;
-    align-items: flex-start;
-    text-align: start;
-    gap: 10px;
+  .text,
+  #whats {
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 500px) {
+
+  #imgLogo {
+    width: 140px;
+    height: 35px;
+    margin-bottom: 0px;
+  }
+
+  .footer-body {
+    font-size: 13.5px;
+  }
+
+  #textFooter {
+    width: 35px;
+    height: 25px;
+  }
+
+  #footerIcons {
+    flex-wrap: wrap;
+
+
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 350px) {
+
+  #offcanvasNavbar {
+    width: 50%;
   }
 }
