@@ -7,8 +7,9 @@
 
   .container-principal{
     margin: 50px;
-    background-color: #D9D9D9;
+    background-color: #E8E7E7;
     border-radius: 10px;
+    border: 3px solid #FF0B0B;
   }
 
 
@@ -20,7 +21,8 @@
 
 .line{
   opacity: 1!important;
-  margin: 0 30vh; 
+  margin: 0 40vh;
+  border: 1px solid #FF0B0B;
 }
 
 
@@ -31,10 +33,11 @@
 
 
 .pizzas-fundo, .bebidas-fundo{
-  background-color: #E8E7E7;
+  background-color: #fffafa;
   border-radius: 10px;
   width: 400px;
   box-shadow: 0px 4px 4px 0px #00000040;
+  /* border: 1px solid #FF0B0B; */
   padding: 25px;
   margin: 30px 0;
 }
@@ -53,10 +56,12 @@
 }
 .pizzas-buttons button, .bebidas-buttons button{
   background-color: #15AF5F;
-  color: #fff;
+  color: #fffafa;
   border: none;
   padding: 5px 15px;
+  border-radius: 3px;
 } 
+
 
 
 @media( max-width: 1020px){
