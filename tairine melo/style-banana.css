@@ -96,9 +96,6 @@
     margin-left: 26vh;   
 }
 
-.cobertura-banana-nevada {
-    /* margin-left: 30px; */
-}
 
 
 .subtitulo-modo-de-preparo {
@@ -127,14 +124,24 @@
 .section-mais-receitas-menu-horizontal {
     display: flex;
     justify-content: center;
-    margin-bottom: 90px;
+    margin-bottom: 80px;
 }
 
 .span-imagem-arrow-left, .span-imagem-pizza-lowcarb-couveflor, .span-imagem-pizza-beterraba, .span-imagem-pizza-napolitana, .span-imagem-pizza-chocolate, .span-imagem-arrow-right {
    margin: 0 25px 10px;
 }
 
-
+.footer-body {
+    background-color: #ECECEC;
+    color: #000;
+    border-top-color: #999;
+    border-top-width: 3px;
+    border-top-style: solid;
+    display: flex;
+    height: 10vh;  /*tava 13VH e quando coloca 1.5 vh ou menor, ele fica com fundo transparente, pq será?*/
+    flex-wrap: wrap;
+    font-size: 17.5px;
+  }
 
 /*MEDIA QUERIES -----------------------------*/
 
