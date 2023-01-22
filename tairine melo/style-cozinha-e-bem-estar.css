@@ -17,17 +17,6 @@
     background-size: 50vh;
     
 }
-/* #header{
-    background-color: #E63030;
-    height: 70px;
-    padding: 0px;
-}
-#imgLogo{
-    position: relative;
-    width: 170px;
-    height: 53px;
-    margin-bottom: 10px;
-} */
 
 #noticias_main {
     display: flex;
@@ -53,47 +42,23 @@
     height: 117px;
     width: 800px;
     margin: 15px;
-    /* margin-bottom: 20px;
-    margin-top: 20px; */
     border-radius: 10px;
     box-shadow: 1px 1px 8px rgb(126, 126, 126);
     text-decoration: none;
     /*NAO PEGOU, tive que fazer um hover*/
-
 }
 
 .imagem-artigo {
-    border-radius: 10px 0px 0px 10px; /*top-left, top-right, bottom-right, bottom-left/
+    border-radius: 10px 0px 0px 10px; /*top-left, top-right, bottom-right, bottom-left*/
 }
 
- article#content {
+.conteudo {
     width: 900px;
-    max-height: 1000px; /* 270px -PARA O READ MORE max-height: 275px; */
+    max-height: 275px; /* 270px -PARA O READ MORE max-height: 275px; */
     overflow: hidden;  /*OVERFLOW, esconde o que excede da box*/
-    transition: max-height 1s
+    transition: max-height 0.4s;
 }
  
-
-/* #content::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background: linear-gradient(transparent, rgb(179, 194, 247))
-} --Para deixar aquela parte transparente, POREM, nao pegou direito
- */
-
-
-
-article.open {
-    /*classe para abrir o article. Usando a função JS*/
-    background-color: rgb(239, 241, 241);
-    /*NÃO TÁ ABRINDO !*/
-    max-height: 1000px;
-    transition: 0.9s;
-    position: relative;
-}
 
 #botao-mais {
     border: none;
@@ -120,16 +85,24 @@ article.open {
 
 .main-noticias-paragrafo-a {
     text-decoration: none;
-    text-align: center;
-    /*NAO PEGOU*/
+    text-align: center;    /*NAO PEGOU*/
     margin-left: 50px;
     color: #000;
     font-weight: bold;
 }
 
 .main-noticias-paragrafo-a:hover {
-    text-decoration: none;
-    /*NÃO  PEGOU*/
+    text-decoration: none;    
     color: black;
 
+}
+
+/* ---------------------Estilo Dinâmico ----------------------*/
+
+article.open {
+    /*classe para abrir o article. Usando a função JS*/
+    max-height: 1000px;
+    transition: 0.5s;
+    width: 900px;
+    /* position: relative;  */
 }

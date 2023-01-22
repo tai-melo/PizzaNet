@@ -1,15 +1,20 @@
 const article = document.querySelector("#content");
 const button = document.querySelector("#botao-mais");
 
-button.addEventListener ("click", mostrarMais);
+button.addEventListener("click", lerMais);
 
-function mostrarMais() {
-    if (article.className == "open"){
+function lerMais() {
+  
+    if (article.className == "conteudo"){
         article.className = "";
-        button.innerHTML= "Ler mais";
-    } else {
-        article.className = "open";
-        button.innerHTML = "Mostrar menos";
-       
+        article.classList.add("open");
+        button.innerHTML= "Mostrar menos";
+    } 
+    else if(article.className == "open") { 
+        
+        article.classList.remove("open");
+        article.classList.add("conteudo");        
+        button.innerHTML = "Ler mais";
+
     }
 }
