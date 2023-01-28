@@ -1,0 +1,103 @@
+/* #main-Content{
+    height: 100%!important;
+} */
+
+.image_background{
+    background-image: url(../assets\ Develop/pizza_fundo.svg) ;
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+
+.containerHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.containerText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 40%;
+    height: 393px;
+    padding: 0 50px;
+    background: #F7F8F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: 90px 0 10px 0;
+    
+}
+
+.containerImg{
+    margin: 90px 0 10px 0;
+}
+
+
+.containerReceitasPacotes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 70px 0;
+}
+
+/* media do footer */
+@media screen and (min-width:  2000px) {
+    #main-Content{
+        height: 100%;
+    }
+}
+/* fim do media do footer */
+@media screen and (max-width: 1024px){
+    .containerText{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .containerHome{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerImg{
+        margin: 0 0 10px 0;
+    }
+
+    .containerText{
+        margin: 90px 0 0px 0;
+        width: 398px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 12px;
+    }
+
+    .containerImg{
+        text-align: center;
+    }
+    .containerImg img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .containerImg img{
+        display: none;
+    }
+    .containerReceitasPacotes{
+        margin: 0 0 100px 0;
+    }
+    .containerReceitasPacotes img {
+        width: 100%;
+    }
+    .image_background{
+        background-image: none;
+    }
+    .containerText{
+        width: 80%;
+        padding: 25px;
+    }
+}
