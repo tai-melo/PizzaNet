@@ -78,7 +78,7 @@
 }
 
 #content {
-  height: 80vh;
+  height: 75vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -90,47 +90,69 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 65vh;
-  width: 65vh;
+  height: 70vh;
+  width: 70vh;
 }
 
 #login {
-  height: 65vh;
-  width: 65vh;
+  height: 70vh;
+  width: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  row-gap: 35px;
+  row-gap: 26px;
 }
 
 .inputs {
-  font-size: 20px;
+  font-size: 18px;
   background-color: transparent;
-  width: 75%;
+  width: 85%;
+  padding-left: 3px;
   border: none;
   border-bottom: 2px solid #FF0B0B;
 }
 
-#password {
-  font-size: 20px;
+.containerPassword {
+  font-size: 18px;
+  background-color: transparent;
+  width: 85%;
+  padding-left: 3px;
+  border: none;
+}
+
+#passwordArea {
+  border-bottom: 2px solid #FF0B0B;
+}
+
+#error {
+  height: 0px;
+  font-size: 15px;
+  color: #FF0B0B;
+}
+
+#password,
+#passwordConfirmar {
+  font-size: 18px;
   background-color: transparent;
   width: 90%;
   border: none;
 }
 
-#eye {
+#eye,
+#eyeConfirmar {
   font-size: 23px;
 }
 
-#buttonShow {
+.buttonShow {
   background-color: transparent;
   border: none;
 }
 
 
 .inputs:focus,
-#password:focus {
+#password:focus,
+#passwordConfirmar:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
 }
@@ -140,7 +162,7 @@
   margin-top: 16px;
   color: white;
   border-radius: 25px;
-  width: 35%;
+  width: 45%;
   height: 6vh;
   background-color: #FF0B0B;
   border: 0px;
@@ -155,7 +177,7 @@
 
 #span-texts {
   height: 3vh;
-  font-size: 18px;
+  font-size: 16px;
   color: #FF0B0B;
   display: flex;
   flex-direction: row;

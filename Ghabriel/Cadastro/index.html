@@ -41,9 +41,6 @@
                   <button class="text">Cardápio</button>
                 </a></span>
               <span class="textHover"><a class="nav-link active" href="#">
-                  <button class="text">Pricing</button>
-                </a></span>
-              <span class="textHover"><a class="nav-link active" href="#">
                   <button class="text">Cozinha & Bem-Estar</button>
                 </a></span>
             </div>
@@ -70,11 +67,19 @@
           <h1>Faça seu Cadastro</h1>
           <input class="inputs" id="nome" required placeholder="Nome" type="text">
           <input class="inputs" id="email" required placeholder="Email" type="email">
-          <div class="inputs" id="passwordArea">
+          <div class="inputs">
             <input id="password" required placeholder="Senha" type="password">
-            <button id="buttonShow" type="button"><i id="eye" class="bi-eye-slash"></i></button>
+            <button class="buttonShow" id="senha" type="button"><i id="eye" class="bi-eye-slash"></i></button>
           </div>
-          <button id="btn-submit" type="submit">Cadastrar</button>
+          <div class="containerPassword">
+            <div id="passwordArea">
+              <input id="passwordConfirmar" required placeholder="Confirmar senha" type="password">
+              <button class="buttonShow" id="confirmar" type="button"><i id="eyeConfirmar"
+                  class="bi-eye-slash"></i></button>
+            </div>
+            <p id="error"></p>
+          </div>
+          <button id="btn-submit" type="button">Cadastrar</button>
           <span id="span-texts">
             <a class="texts" href="../login/index.html">
               <p>Já é cadastrado? Faça seu Login</p>
