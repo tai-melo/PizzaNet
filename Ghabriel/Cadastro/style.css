@@ -44,11 +44,6 @@
   margin-left: 5vh;
 }
 
-#whats {
-  color: #000;
-  border-bottom: 0px;
-  cursor: no-drop;
-}
 
 .text {
   font-weight: 400;
@@ -92,6 +87,7 @@
   background-position: center;
   height: 70vh;
   width: 70vh;
+  margin-left: 15px;
 }
 
 #login {
@@ -162,6 +158,7 @@
   margin-top: 16px;
   color: white;
   border-radius: 25px;
+  font-size: 18px;
   width: 45%;
   height: 6vh;
   background-color: #FF0B0B;
@@ -237,6 +234,7 @@
   color: #999;
 }
 
+
 @media(max-width: 1120px) {
   .pages1 {
     gap: 5px;
@@ -246,15 +244,18 @@
 
 @media(max-width: 990px) {
 
-  .text,
-  .whtas-icon,
-  .bi-bag,
-  #whats {
-    color: #fff;
+  #img {
+    height: 0vh;
+    width: 0vh;
   }
 
-  .whtas-icon {
-    padding-right: 10px;
+  #login {
+    height: 50vh;
+  }
+
+  .text,
+  .bi-bag {
+    color: #fff;
   }
 
   .pages1,
@@ -284,8 +285,7 @@
     width: 40%;
   }
 
-  .text,
-  #whats {
+  .text {
     font-size: 13px;
   }
 }
@@ -296,6 +296,16 @@
     width: 140px;
     height: 35px;
     margin-bottom: 0px;
+  }
+
+  #btn-submit {
+    font-size: 16px;
+    height: 5vh;
+    border-radius: 15px;
+  }
+
+  #span-texts {
+    font-size: 13px;
   }
 
   .footer-body {
@@ -309,8 +319,6 @@
 
   #footerIcons {
     flex-wrap: wrap;
-
-
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -320,6 +328,32 @@
 }
 
 @media(max-width: 350px) {
+
+  .inputs {
+    width: 70%;
+  }
+
+  .containerPassword {
+    width: 70%;
+  }
+
+  #eye,
+  #eyeConfirmar {
+    font-size: 15px;
+  }
+
+  #password,
+  #passwordConfirmar {
+    width: 85%;
+  }
+
+  #btn-submit {
+    font-size: 13px;
+  }
+
+  #span-texts {
+    font-size: 10px;
+  }
 
   #offcanvasNavbar {
     width: 50%;
