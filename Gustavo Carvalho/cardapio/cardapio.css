@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.a {
+  text-decoration: none;
+  color: #000;
+}
+
+#body {
+  height: 100vh;
+  width: 100%;
+}
+
+#header {
+  background-color: #fff;
+  height: 12vh;
+  border-bottom-color: #FF0B0B;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
+#imgLogo {
+  position: relative;
+  width: 140px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.navegacao {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pages1 {
+  gap: 15px;
+  margin-left: 5vh;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  border-width: 0;
+  background-color: transparent;
+}
+
+.text:hover {
+  color: #FF0B0B;
+  border-bottom: 2px solid #FF0B0B;
+}
+
+#drop {
+  font-weight: 400;
+  font-size: 18px;
+  border-width: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+#drop:hover {
+  color: #FF0B0B;
+  border-bottom: 2px solid #FF0B0B;
+}
+
+/* Main */
+
+.container-principal {
+  margin: 50px;
+  background-color: #E8E7E7;
+  border-radius: 10px;
+  border: 3px solid #FF0B0B;
+}
+
+
+
+.text-cardapio {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  gap: 0px 30px;
+}
+
+.bi-journal-text {
+  color: #FF0B0B;
+  font-size: 50px;
+}
+
+.bi-cart3 {
+  font-size: 50px;
+}
+
+.btnIcons {
+  background-color: transparent;
+  border: none;
+}
+
+
+.line {
+  opacity: 1 !important;
+  margin: 0 40vh;
+  border: 1px solid #FF0B0B;
+  margin-bottom: 15px;
+  /* width: 70%; */
+}
+
+
+#cardapio-pizzas,
+.cardapio-bebidas,
+.refrigerantes {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.pizzas-fundo,
+.bebidas-fundo {
+  background-color: #fffafa;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  /* border: 1px solid #FF0B0B; */
+  padding: 25px;
+  margin: 30px 0;
+}
+
+.pizzas-texto,
+.bebidas-texto {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+
+.pizzas-buttons,
+.bebidas-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pizzas-buttons button,
+.bebidas-buttons button {
+  background-color: #15AF5F;
+  color: #fffafa;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+#divCardapio {
+  display: flex;
+  flex-direction: column;
+}
+
+#divCarrinho {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Section-carrinho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #fffafa;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.texts {
+  width: 100%;
+  padding: 0px 50px 20px 50px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.taxa {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0px 50px 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.titlePedidos {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#divPaiPedidos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#linha {
+  width: 1000px;
+}
+
+.finalizar {
+  border: none;
+  background-color: #15AF5F;
+  color: #fff;
+  padding: 2vh 3vh;
+  border-radius: 5px;
+}
+
+#esvaziar {
+  background-color: transparent;
+  color: #FF0B0B;
+  margin-bottom: 17px;
+  font-size: 13px;
+}
+
+#esvaziar:hover {
+  color: #7c1c1c;
+}
+
+
+
+/* footer */
+
+.footer-body {
+  background-color: #ECECEC;
+  color: #000;
+  border-top-color: #999;
+  border-top-width: 3px;
+  border-top-style: solid;
+  display: flex;
+  height: 13vh;
+  flex-wrap: wrap;
+  font-size: 17.5px;
+}
+
+#footerIcons {
+  width: 100%;
+  display: flex;
+  margin: 10px 10px 0px 10px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.copyright {
+  width: 100%;
+}
+
+#trabalhe,
+#textFooter {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#textFooter:hover {
+  color: #999;
+}
+
+#trabalhe:hover {
+  color: #999;
+}
+
+@media(max-width: 1120px) {
+  .pages1 {
+    gap: 5px;
+    margin-left: 0vh;
+  }
+}
+
+@media(max-width: 990px) {
+
+  .text,
+  .bi-bag,
+  .bi-box-arrow-right {
+    color: #fff;
+  }
+
+  .bi-box-arrow-right {
+    padding-left: 9px;
+  }
+
+  .pages1,
+  .pages2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .text:hover,
+  .bi-bag:hover,
+  .bi-box-arrow-right:hover {
+    color: #999;
+    border: 0px;
+  }
+
+  #offcanvasNavbar {
+    width: 30%;
+    background-color: rgba(48, 44, 44, 0.4);
+  }
+}
+
+@media(max-width: 605px) {
+
+  #offcanvasNavbar {
+    width: 40%;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 500px) {
+
+  #imgLogo {
+    width: 140px;
+    height: 35px;
+    margin-bottom: 0px;
+  }
+
+  .footer-body {
+    font-size: 13.5px;
+  }
+
+  #textFooter {
+    width: 35px;
+    height: 25px;
+  }
+
+  #footerIcons {
+    flex-wrap: wrap;
+
+
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 350px) {
+
+  #offcanvasNavbar {
+    width: 50%;
+  }
+}
+
+@media(max-width: 1020px) {
+
+  .pizzas-fundo,
+  .bebidas-fundo {
+    width: 300px;
+  }
+
+  .pizzas-buttons button,
+  .bebidas-buttons button {
+    padding: 5px;
+  }
+}
+
+
+@media(max-width: 750px) {
+
+  #cardapio-pizzas,
+  .cardapio-bebidas,
+  .refrigerantes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pizzas-fundo,
+  .bebidas-fundo {
+    width: 100%;
+  }
+
+  .container-principal {
+    padding: 25px;
+  }
+
+  .line {
+    margin: 0 15vh;
+  }
+}
+
+
+@media(max-width: 500px) {
+
+  .pizzas-texto,
+  .bebidas-texto {
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    flex-direction: column;
+    /* padding: 0 20px; */
+    font-weight: bold;
+  }
+
+  .pizzas-buttons,
+  .bebidas-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pizzas-buttons button,
+  .bebidas-buttons button {
+    margin: 5px 0;
+  }
+
+  .line {
+    opacity: 0;
+  }
+}
