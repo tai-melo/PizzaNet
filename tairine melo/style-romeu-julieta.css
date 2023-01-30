@@ -27,10 +27,13 @@
 
 }
 
+
+
 #imagem-pizza-romeu-julieta { 
-    box-shadow: 3px 3px 10px rgb(80, 80, 80);
-    width: 998px;
-    
+    width: 150vh;
+    height: 110vh;
+    box-shadow: 5px 5px 15px;
+    border-radius: 10px;
 }
 
 
@@ -66,15 +69,17 @@
     margin-bottom: 30px;
 } 
 
-.section-ingredientes {
+.div-ingredientes {
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    margin-left: 26vh
+    flex-direction: row;
+    justify-content:flex-start;
+    
+    margin-left: 26vh;
 }
 
 .romeuejulieta-recheio, .romeuejulieta-cobertura, .romeuejulieta-massa {
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .subtitulo-massa, .subtitulo-cobertura, .subtitulo-recheio {
@@ -101,17 +106,36 @@
 }
 
 
-.subtitulo-mais-receitas-menu-horizontal {
-    margin-left: 26vh;
-    margin-bottom: 60px;
+.links {
+    padding: 0px 130px;
+}
+  
+.title_2 {
+    padding: 0 50px 30px 50px;
 }
 
-.section-mais-receitas-menu-horizontal {
+/* Glider.js ---*/
+
+.glider-contain {
+    max-width: 90%;
+  
+}
+  
+.glider {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+  
+.glider-slide {
     display: flex;
-    justify-content: center;
-    margin-bottom: 90px;
 }
-
-.span-imagem-arrow-left, .span-imagem-pizza-lowcarb-couveflor, .span-imagem-pizza-beterraba, .span-imagem-pizza-napolitana, .span-imagem-pizza-chocolate, .span-imagem-arrow-right {
-   margin: 0 25px 10px;
+  
+.glider-slide:hover {
+    opacity: 0.3;
 }
+  
+.img-slide {
+    border-radius: 10px;
+}
+  
+/* Glider.js fim ---*/

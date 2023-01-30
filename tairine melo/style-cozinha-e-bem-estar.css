@@ -82,6 +82,10 @@
     
 }
 
+#botao-mais:hover{
+    color: #FF0B0B;
+}
+
 .main-noticias-paragrafo {
     text-decoration: none;
     color: black;
@@ -317,15 +321,15 @@ article.open {
         display: none;
     }
 
-    .main-noticias-paragrafo {
-        /* display: flex;
+    /* .main-noticias-paragrafo {
+        /display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-         */
+         
         
     }
-
+ */
     .main-noticias-paragrafo-a {
         /* display: flex;
         flex-direction: column;
