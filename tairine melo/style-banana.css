@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;    
@@ -131,17 +132,6 @@
    margin: 0 25px 10px;
 }
 
-.footer-body {
-    background-color: #ECECEC;
-    color: #000;
-    border-top-color: #999;
-    border-top-width: 3px;
-    border-top-style: solid;
-    display: flex;
-    height: 10vh;  /*tava 13VH e quando coloca 1.5 vh ou menor, ele fica com fundo transparente, pq será?*/
-    flex-wrap: wrap;
-    font-size: 17.5px;
-  }
 
 /*MEDIA QUERIES -----------------------------*/
 

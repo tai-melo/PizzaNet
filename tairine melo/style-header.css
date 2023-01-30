@@ -164,9 +164,45 @@
   #offcanvasNavbar {
     width: 40%;
   }
-
   .text,
   #whats {
     font-size: 13px;
+  }
+}
+
+
+@media(max-width: 500px) {
+
+  #imgLogo {
+    width: 140px;
+    height: 35px;
+    margin-bottom: 0px;
+  }
+
+  .footer-body {
+    font-size: 13.5px;
+  }
+
+  #textFooter {
+    width: 35px;
+    height: 25px;
+  }
+
+  #footerIcons {
+    flex-wrap: wrap;
+
+
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 350px) {
+
+  #offcanvasNavbar {
+    width: 50%;
   }
 }

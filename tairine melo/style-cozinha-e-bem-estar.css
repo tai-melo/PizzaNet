@@ -18,6 +18,10 @@
     
 }
 
+/* .h3-max{
+        font-size: max(5vh, .9em);
+} */
+
 #noticias_main {
     display: flex;
     flex-direction: column;
@@ -105,4 +109,263 @@ article.open {
     transition: 0.5s;
     width: 900px;
     /* position: relative;  */
+}
+
+
+/*------------------Media Queries-------------*/
+@media(max-width:1118px){
+   h3 { 
+    font-size: 26px;
+
+   }    
+}
+
+@media(max-width:1068px){
+    h3 { 
+     font-size: 24px;
+ 
+    } 
+}
+
+@media(max-width:898px){
+    h3 { 
+     font-size: 22px;
+ 
+    }
+
+    .conteudo{
+        width: 700px;
+       max-height: 260px;
+       
+    } 
+
+    .link-noticias {
+        /*essa são as Divs*/
+        background-color: rgb(248, 245, 245);
+        border: 1px solid rgb(233, 233, 233);
+        height: 117px;
+        width: 650px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px rgb(126, 126, 126);
+        text-decoration: none;
+        /*NAO PEGOU, tive que fazer um hover*/
+    }
+
+    .main-noticias-paragrafo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-noticias-paragrafo-a {
+        
+        text-decoration: none;
+        text-align: center;    /*NAO PEGOU*/
+        margin-left: 50px;
+        color: #000;
+        font-weight: bold;
+        font-size: 14px;
+        /* padding: 8px; */
+    }
+
+    /* ----------Estilo Dinâmico ------- */
+    article.open {
+        /*classe para abrir o article. Usando a função JS*/
+        max-height: 1000px;
+        transition: 0.5s;
+        width: 700px
+        /* position: relative;  */
+    }
+
+    #botao-mais {
+        border: none;
+        color: black;
+        font-size: .8em;
+        /*1em = 16px*/
+        font-weight: bold;
+        background-color: #26262918;
+        width: 120px;
+        height: 40px;
+        border-radius: 40px;
+        line-height: 35px;/*indica a posição que deseja o txt em relação a altura*/
+        text-align: center;
+        box-shadow: 1px 2px 8px rgb(47, 42, 61);
+        margin-top: 10px;
+        margin-bottom: 20px;
+        /* padding: 10px; */
+        
+    }
+}
+
+@media(max-width:700px){
+    h3 { 
+     font-size: 20px;
+ 
+    }
+
+    .conteudo{
+        
+        width: 550px;
+        max-height: 220px; 
+       
+    } 
+
+    .link-noticias {
+        /*essa são as Divs*/
+        background-color: rgb(248, 245, 245);
+        border: 1px solid rgb(233, 233, 233);
+        height: 100px;
+        width: 500px; /* 550px */
+        margin: 8px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px rgb(126, 126, 126);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*NAO PEGOU, tive que fazer um hover*/
+    }
+
+    .imagem-artigo{
+        display: none;
+    }
+
+    .main-noticias-paragrafo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+    .main-noticias-paragrafo-a {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+        text-decoration: none;
+        margin-left: 30px;
+        color: #000;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px; 
+        /* width: 200px; */ /* jjjjjjjjjjjj */
+        
+    }
+
+    /* ----------Estilo Dinâmico ------- */
+    article.open {
+        /*classe para abrir o article. Usando a função JS*/
+        max-height: 1000px;
+        transition: 0.5s;
+        width: 550px
+        /* position: relative;  */
+    }
+
+    #botao-mais {
+        border: none;
+        color: black;
+        font-size: .8em;
+        /*1em = 16px*/
+        font-weight: bold;
+        background-color: #26262918;
+        width: 120px;
+        height: 40px;
+        border-radius: 40px;
+        line-height: 35px;/*indica a posição que deseja o txt em relação a altura*/
+        text-align: center;
+        box-shadow: 1px 2px 8px rgb(47, 42, 61);
+        margin-top: 10px;
+        margin-bottom: 20px;
+        /* padding: 10px; */
+        
+    }
+}
+
+@media(max-width:545px){
+    h3 { 
+     font-size: 20px;
+ 
+    }
+
+    .conteudo{
+        
+        width: 400px;
+        max-height: 220px; 
+       
+    } 
+
+    .link-noticias {
+        /*essa são as Divs*/
+        background-color: rgb(248, 245, 245);
+        border: 1px solid rgb(233, 233, 233);
+        height: 100px;
+        width: 390px; /* 550px */
+        margin: 8px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px rgb(126, 126, 126);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*NAO PEGOU, tive que fazer um hover*/
+    }
+
+    .imagem-artigo{
+        display: none;
+    }
+
+    .main-noticias-paragrafo {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+         */
+        
+    }
+
+    .main-noticias-paragrafo-a {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+        text-decoration: none;
+        margin-left: 20px;
+        color: #000;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px; 
+        /* width: 200px; */ /* jjjjjjjjjjjj */
+        
+    }
+
+    /* ----------Estilo Dinâmico ------- */
+    article.open {
+        /*classe para abrir o article. Usando a função JS*/
+        max-height: 1000px;
+        transition: 0.5s;
+        width: 390px
+        /* position: relative;  */
+    }
+
+    #botao-mais {
+        border: none;
+        color: black;
+        font-size: .8em;
+        /*1em = 16px*/
+        font-weight: bold;
+        background-color: #26262918;
+        width: 120px;
+        height: 40px;
+        border-radius: 40px;
+        line-height: 35px;/*indica a posição que deseja o txt em relação a altura*/
+        text-align: center;
+        box-shadow: 1px 2px 8px rgb(47, 42, 61);
+        margin-top: 10px;
+        margin-bottom: 20px;
+        /* padding: 10px; */
+        
+    }
 }
