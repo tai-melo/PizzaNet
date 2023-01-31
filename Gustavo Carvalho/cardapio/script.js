@@ -1,11 +1,10 @@
 document.getElementById("myFrame").onload = function () { carregar() };
-const informations = []
 
 const calculationTaxa = Math.floor(Math.random() * 40).toFixed(0)
 
 function carregar() {
   const taxa = document.getElementById('taxaLoader')
-  taxa.innerText = `R$ ${calculationTaxa},00`
+  taxa.innerText = `R$ ${localStorage.getItem('taxa')},00`
 }
 
 const divCardapio = document.getElementById('divCardapio')
@@ -36,6 +35,12 @@ const total = document.getElementById('total')
 
 const add = document.querySelectorAll('.addPedido').forEach((element) => {
   element.addEventListener('click', () => {
+
+    element.innerText = '✓'
+
+    setTimeout(() => {
+      element.innerText = 'Fazer pedido'
+    }, 2000);
 
     valorTotal.push(element.dataset)
 
