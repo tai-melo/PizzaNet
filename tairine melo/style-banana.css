@@ -18,9 +18,9 @@
 }
 
 .imagem-banana-nevada{
-    box-shadow: 5px 5px 15px black;
-    width: 998px;
-    
+    width: 150vh;
+    box-shadow: 5px 5px 15px;
+    border-radius: 10px;
 }
 #imagem-pizza-banana-nevada{
     width :60px;
@@ -71,17 +71,13 @@
     padding-left: 15px;
 }
    
- .description_link{
+.description_link{
     padding-top: 15px;
     padding-left: 15px;
-  }
-
-
-.section-imagem-banana-video-chef {
-    display: flex;
-    justify-content: center;
-    
 }
+
+
+
 
 .section-subtitulo-ingredientes-banana-nevada{
     margin-left: 26vh;
@@ -91,12 +87,17 @@
 }
 
 
-.section-ingredientes {
+.div-ingredientes {
     display: flex;
-    flex-direction: column;
-    margin-left: 26vh;   
+    flex-direction: row;
+    justify-content:flex-start;
+    
+    margin-left: 26vh;
 }
 
+.cobertura-banana-nevada{
+    margin-left: 8px;
+}
 
 
 .subtitulo-modo-de-preparo {
@@ -116,21 +117,40 @@
     margin-bottom: 10px;
 }
 
-
-.subtitulo-mais-receitas-menu-horizontal {
-    margin-left: 26vh;
-    margin-bottom: 60px;
+.links {
+    padding: 0px 130px;
+}
+  
+.title_2 {
+    padding: 0 50px 30px 50px;
 }
 
-.section-mais-receitas-menu-horizontal {
+/* Glider.js ---*/
+
+.glider-contain {
+    max-width: 90%;
+  
+}
+  
+.glider {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+  
+.glider-slide {
     display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
 }
+  
+.glider-slide:hover {
+    opacity: 0.3;
+}
+  
+.img-slide {
+    border-radius: 10px;
+}
+  
+/* Glider.js fim ---*/ 
 
-.span-imagem-arrow-left, .span-imagem-pizza-lowcarb-couveflor, .span-imagem-pizza-beterraba, .span-imagem-pizza-napolitana, .span-imagem-pizza-chocolate, .span-imagem-arrow-right {
-   margin: 0 25px 10px;
-}
 
 
 /*MEDIA QUERIES -----------------------------*/
@@ -161,12 +181,7 @@
         height: 55vh;
         margin-left: 30vh;
     }
-    .section-imagem-banana-video-chef{
-        /* width:20vh;
-        height:18vh;
-        margin-left: 35vh;
-        margin-bottom: 20px; */
-    }
+    
     #imagem-video-chef-jose{
         width:60vh;
         height:40vh;
