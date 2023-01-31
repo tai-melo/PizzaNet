@@ -151,11 +151,6 @@
   padding-left: 10px;
 }
 
-.description_link{
-  padding-top: 15px;
-  padding-left: 15px;
-}
-
 .ingredientes{
   padding-left: 180px;
 }
@@ -258,6 +253,10 @@
     gap: 5px;
     margin-left: 0vh;
   }
+
+  #ilutration_1 {
+    width: 90%;
+  }
 }
 
 @media(max-width: 990px) {
@@ -292,7 +291,44 @@
     width: 30%;
     background-color: rgba(48, 44, 44, 0.4);
   }
+
+  #ilustration_1 {
+    width: 80%;
+  }
 }
+
+@media(max-width: 830px) {
+  #dica {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 80px;
+  }
+
+  #ingredientes {
+    padding-left: 80px;
+  }
+
+  #display_ingredientes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #modo_preparo_1 {
+  padding: 50px 80px;
+  }
+
+  #title_2 {
+    padding-left: 0px;
+  }
+
+  #glider-contain {
+    margin: 0px;
+  
+  }
+  
+}
+
 
 @media(max-width: 605px) {
 

@@ -27,7 +27,7 @@ window.addEventListener('load',function(){
                     slidesToScroll: 4,
                     slidesToShow: 4,
                     dots: false,
-                    arrows: false,
+                    arrows: true,
                 }
             },
             {
@@ -40,10 +40,10 @@ window.addEventListener('load',function(){
             {
                 breakpoint: 500,
                 settings: {
-                    slidesToScroll: 2,
-                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
                     dots: false,
-                    arrows: false,
+                    arrows: true,
                     scrollLock: true
                 }
             }
