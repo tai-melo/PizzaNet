@@ -4,7 +4,7 @@ const calculationTaxa = Math.floor(Math.random() * 40).toFixed(0)
 
 function carregar() {
   const taxa = document.getElementById('taxaLoader')
-  taxa.innerText = `R$ ${localStorage.getItem('taxa')},00`
+  taxa.innerText = `R$ ${calculationTaxa},00`
 }
 
 const divCardapio = document.getElementById('divCardapio')
