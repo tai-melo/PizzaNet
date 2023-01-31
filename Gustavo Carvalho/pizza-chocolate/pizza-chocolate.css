@@ -1,76 +1,177 @@
-.container_principal{
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.a {
+    text-decoration: none;
+    color: #000;
+}
+
+#body {
+    height: 100vh;
+    width: 100%;
+}
+
+#header {
+    background-color: #fff;
+    height: 12vh;
+    border-bottom-color: #FF0B0B;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+#imgLogo {
+    position: relative;
+    width: 140px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.navegacao {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages1 {
+    gap: 15px;
+    margin-left: 5vh;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    border-width: 0;
+    background-color: transparent;
+}
+
+.text:hover {
+    color: #FF0B0B;
+    border-bottom: 2px solid #FF0B0B;
+}
+
+.container_principal {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
 }
 
-.image_background{
-    background-image: url(../assets\ Develop/pizza_fundo.svg) ;
+.image_background {
+    background-image: url(../assets\ Develop/pizza_fundo.svg);
     background-repeat: repeat-y;
     background-position: right;
 }
 
 
-.text_imagem-principal .h1-text{
+.text_imagem-principal .h1-text {
     padding: 25px 0;
     text-align: center;
 }
 
 
 
-.ingredientes{
+.ingredientes {
     display: flex;
     justify-content: center;
     padding: 25px 0;
     margin-right: 75px;
 }
 
-.ingredientes_text{
+.ingredientes_text {
     margin-left: 25px;
     text-align: justify;
 }
 
-.ingredientes_text h3{
+.ingredientes_text h3 {
     margin: 0 0 15px 0;
 }
-.ingredientes_text p{
+
+.ingredientes_text p {
     /* padding: 0; */
     margin: 0 0 8px 0;
 }
 
-.modoPreparo{
+.modoPreparo {
     text-align: center;
 }
-.modoPreparo h3{
+
+.modoPreparo h3 {
     margin: 1em 28em 1em 0;
 }
 
-.modoPreparo_receita{   
+.modoPreparo_receita {
     text-align: justify;
     margin: 0 450px;
 }
 
-.maisReceitas h1{
+.maisReceitas h1 {
     margin: 50px 0 50px 120px;
 }
 
 
-.maisReceitas_imagens{
+.maisReceitas_imagens {
     display: flex;
     align-items: center;
     margin: 0 0 50px 0;
 }
 
-.maisReceitas_imagens a{
+.maisReceitas_imagens a {
     padding: 0 25px;
     cursor: context-menu;
 }
 
-.maisReceitas_imagens a img, .maisReceitas_imagens img{
+.maisReceitas_imagens a img,
+.maisReceitas_imagens img {
     cursor: pointer;
 }
 
+/* footer */
+
+.footer-body {
+    background-color: #ECECEC;
+    color: #000;
+    border-top-color: #999;
+    border-top-width: 3px;
+    border-top-style: solid;
+    display: flex;
+    height: 13vh;
+    flex-wrap: wrap;
+    font-size: 17.5px;
+}
+
+#footerIcons {
+    width: 100%;
+    display: flex;
+    margin: 10px 10px 0px 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyright {
+    width: 100%;
+}
+
+#trabalhe,
+#textFooter {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#textFooter:hover {
+    color: #999;
+}
+
+#trabalhe:hover {
+    color: #999;
+}
 
 
 
@@ -79,85 +180,174 @@
 
 @media (max-width: 1200px) {
 
-    .imagem-pizza{
+    .imagem-pizza {
         display: flex;
         /* flex-direction: column; */
         justify-content: center;
     }
-    .imagem-pizza img{
+
+    .imagem-pizza img {
         width: 50%;
     }
 
-    .ingredientes{
+    .ingredientes {
         display: flex;
         flex-direction: column;
         margin: 0;
     }
 
-    .ingredientes_text{
+    .ingredientes_text {
         margin: 25px 0;
     }
-    .modoPreparo h3{
+
+    .modoPreparo h3 {
         text-align: center;
         margin: 25px 0;
     }
-    .modoPreparo_receita{
+
+    .modoPreparo_receita {
         margin: 0 150px;
     }
 
 
-    .maisReceitas_imagens a{
+    .maisReceitas_imagens a {
         padding: 10px;
     }
 
 
-    .maisReceitas_imagens img{
+    .maisReceitas_imagens img {
         width: 40px;
     }
-    .maisReceitas_imagens a img{
+
+    .maisReceitas_imagens a img {
         width: 125px;
         height: 80px;
     }
 }
 
+@media(max-width: 1120px) {
+    .pages1 {
+        gap: 5px;
+        margin-left: 0vh;
+    }
+}
 
-@media( max-width: 800px){
 
-    .image_background{
-        background-image: none ;
+@media(max-width: 990px) {
+
+    .text,
+    .bi-bag {
+        color: #fff;
     }
 
-
-    .maisReceitas_imagens_receitas{
+    .pages1,
+    .pages2 {
         display: flex;
-        justify-content:center;
-        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
     }
 
-    .ingredientes_imagem a img{
-        /* width: 50%; */
-        width: 50%;
-    }
-    .ingredientes_imagem{
-        text-align: center;
+    .text:hover,
+    .bi-bag:hover {
+        color: #999;
+        border: 0px;
     }
 
-    .modoPreparo_receita{
-        margin: 0 20px;
-        width: 80%;
-    }
-
-    .ingredientes_text{
-        margin: 0;
-        text-align: center;
+    #offcanvasNavbar {
+        width: 30%;
+        background-color: rgba(48, 44, 44, 0.4);
     }
 }
 
 
 
-@media(max-width : 400px){
-    .maisReceitas h1{
+
+@media(max-width: 800px) {
+
+    .image_background {
+        background-image: none;
+    }
+
+
+    .maisReceitas_imagens_receitas {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ingredientes_imagem a img {
+        /* width: 50%; */
+        width: 50%;
+    }
+
+    .ingredientes_imagem {
+        text-align: center;
+    }
+
+    .modoPreparo_receita {
+        margin: 0 20px;
+        width: 80%;
+    }
+
+    .ingredientes_text {
         margin: 0;
         text-align: center;
+    }
+}
+
+@media(max-width: 605px) {
+
+    #offcanvasNavbar {
+        width: 40%;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 500px) {
+
+    #imgLogo {
+        width: 140px;
+        height: 35px;
+        margin-bottom: 0px;
+    }
+
+    .footer-body {
+        font-size: 13.5px;
+    }
+
+    #textFooter {
+        width: 35px;
+        height: 25px;
+    }
+
+    #footerIcons {
+        flex-wrap: wrap;
+
+
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width : 400px) {
+    .maisReceitas h1 {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media(max-width: 350px) {
+
+    #offcanvasNavbar {
+        width: 50%;
     }
 }
