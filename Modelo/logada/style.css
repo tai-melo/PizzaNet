@@ -64,6 +64,11 @@
   border-radius: 0;
 }
 
+#dropConta:focus,
+#dropSair:focus {
+  background-color: rgba(26, 23, 23, 0.514);
+}
+
 #drop:hover {
   color: #FF0B0B;
   border-bottom: 2px solid #FF0B0B;
