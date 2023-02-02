@@ -21,6 +21,16 @@
 </head>
 
 <body id="body">
+
+  <div class="desativo">
+
+    <div class="centro">
+      <img src="assets/pizza-favicon.ico" alt="" class="icone-desativo">
+    </div>
+
+  </div>
+
+
   <header>
     <nav class="navbar navbar-expand-lg" id="header">
       <div class="container-fluid">
@@ -44,7 +54,7 @@
                   <button class="text">Cozinha & Bem-Estar</button>
                 </a></span>
             </div>
-            <div class="navbar pages2">
+            <div class="navbar pages2 navLoginAndCadastro">
               <a class="nav-link active" href="./index.html"><button class="text">Login</button></a>
               <a class="nav-link active" href="../Cadastro/index.html"><button class="text">Cadastro</button></a>
             </div>
@@ -64,9 +74,9 @@
             <input id="password" required placeholder="Senha" type="password">
             <button id="buttonShow" type="button"><i id="eye" class="bi-eye-slash"></i></button>
           </div>
-          <button id="btn-submit" type="submit">Login</button>
+          <button id="btn-submit" type="button">Login</button>
           <span id="span-texts">
-            <a class="texts">
+            <a href="../EsqueciSenhaTemplate/esqueciSenha.html" class="texts">
               <p>Esqueceu sua senha?</p>
             </a>
             <a href="../Cadastro/index.html" class="texts">
@@ -122,6 +132,15 @@
       © Pizza's Net 2022
     </div>
   </footer>
+
+
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth-compat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+
+  <script src="firebase-init.js"></script>
+  <script src="loading.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
