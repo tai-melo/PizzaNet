@@ -21,6 +21,14 @@
 </head>
 
 <body id="body">
+
+  <div class="desativo">
+
+    <div class="centro">
+      <img src="assets/pizza-favicon.ico" alt="" class="icone-desativo">
+    </div>
+
+  </div>
   <header>
     <nav class="navbar navbar-expand-lg" id="header">
       <div class="container-fluid">
@@ -47,15 +55,22 @@
                   <button class="text">Cozinha & Bem-Estar</button>
                 </a></span>
             </div>
-            <div class="navbar pages2">
-              <div class="navbar whats">
-                <i class="bi bi-whatsapp whtas-icon"></i>
-                <a class="nav-link active"><button id="whats" class="text">(11) 98100-0018</button></a>
+            <div class="navbar pages2 navRight">
+              <a class="nav-link active activeLogin" href="../Ghabriel/login/index.html"><button class="text">Login</button></a>
+              <a class="nav-link active activeCadastro" href="../Ghabriel/Cadastro/index.html"><button class="text">Cadastro</button></a>
+              <div class="btn-group">
+                <button type="button" id="drop" class="btn dropdown-toggle userName" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                 
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="nav-link active" href="/Ghabriel/DadosUsuarios/dadosUsuarios.html"><button class="dropdown-item buttonSuaConta dropConta" type="button">Sua
+                        conta</button></a></li>
+                  <li><a class="nav-link active" href="#"><button class="dropdown-item buttonSair dropSair" type="button" id="buttonSair">Sair</button></a>
+                  </li>
+                </ul>
               </div>
-              <a class="nav-link active" href="#"><button class="text">Login</button></a>
-              <a class="nav-link active" href="#"><button class="text">Cadastro</button></a>
-              <span><a class="nav-link active" href="#"><i class="bi bi-bag"></i></a></span>
-              <button type="button" id="buttonSair">Sair</button>
+
             </div>
           </div>
         </div>
@@ -148,8 +163,10 @@
     <!-- Autenticação no firebase -->
     <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore-compat.js"></script>
     <script src="../Ghabriel/login/firebase-init.js"></script>
     <script src="home.js"></script>
+    <script src="../Ghabriel/login/loading.js"></script>
 
 </body>
 
