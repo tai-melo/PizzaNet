@@ -21,6 +21,14 @@
 </head>
 
 <body id="body">
+
+    <div class="desativo">
+
+    <div class="centro">
+      <img src="assets/pizza-favicon.ico" alt="" class="icone-desativo">
+    </div>
+
+  </div>
   <header>
     <nav class="navbar navbar-expand-lg" id="header">
       <div class="container-fluid">
@@ -59,21 +67,12 @@
         <span id="img"></span>
         <form id="login">
           <h1>Faça seu Cadastro</h1>
-          <input class="inputs" id="nome" required placeholder="Nome" type="text">
           <input class="inputs" id="email" required placeholder="Email" type="email">
           <div class="inputs">
             <input id="password" required placeholder="Senha" type="password">
             <button class="buttonShow" id="senha" type="button"><i id="eye" class="bi-eye-slash"></i></button>
           </div>
-          <div class="containerPassword">
-            <div id="passwordArea">
-              <input id="passwordConfirmar" required placeholder="Confirmar senha" type="password">
-              <button class="buttonShow" id="confirmar" type="button"><i id="eyeConfirmar"
-                  class="bi-eye-slash"></i></button>
-            </div>
-            <p id="error"></p>
-          </div>
-          <button id="btn-submit" type="button">Cadastrar</button>
+          <button id="btn-submit" class="btn-cadastrar" type="button">Cadastrar</button>
           <span id="span-texts">
             <a class="texts" href="../login/index.html">
               <p>Já é cadastrado? Faça seu Login</p>
@@ -128,6 +127,20 @@
       © Pizza's Net 2022
     </div>
   </footer>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore-compat.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+
+  <script src="../login/firebase-init.js"></script>
+  <script src="../login/loading.js"></script>
+  <script src="register.js"></script>
+  <!-- <script src="../login/index.js"></script> -->
 </body>
 
 </html>
