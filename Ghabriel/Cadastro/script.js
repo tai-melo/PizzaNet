@@ -28,21 +28,3 @@ const eyes = document.querySelectorAll('.buttonShow').forEach((element) => {
     }
   })
 })
-
-
-document.getElementById('btn-submit').addEventListener('click', () => {
-  const senha = document.getElementById('password').value
-  const confirmarSenha = document.getElementById('passwordConfirmar').value
-
-  const cadastrar = document.querySelector('#btn-submit')
-  const error = document.getElementById('error')
-
-  if (senha !== confirmarSenha) {
-    error.textContent = 'As senhas devem ser iguais.'
-    setTimeout(() => {
-      error.textContent = ''
-    }, 5000);
-  } else {
-    cadastrar.setAttribute('type', 'submit')
-  }
-})
