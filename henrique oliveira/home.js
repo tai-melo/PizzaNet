@@ -3,6 +3,8 @@ const buttonSair = document.querySelector('#buttonSair')
 
 buttonSair.addEventListener('click', logout)
 
+const dropdown = document.querySelector('.dropdown')
+
 
 
 
@@ -15,8 +17,10 @@ firebase.auth().onAuthStateChanged(user => {
         const disableCadastro = document.querySelector('.activeCadastro')
         disableLogin.classList.add('desativado')
         disableCadastro.classList.add('desativado')
+        dropdown.classList.remove('desativado')
     }else{
         buttonSair.classList.add('desativado')
+        dropdown.classList.add('desativado')
     }
 })
 

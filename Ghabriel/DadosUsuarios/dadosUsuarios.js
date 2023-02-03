@@ -21,6 +21,10 @@ buttonSaveTransaction.addEventListener('click', saveTransaction)
 iconeTituloDesativo.addEventListener('click', ativarIconeDesativo)
 iconeTituloAtivo.addEventListener('click', ativarIconeAtivo)
 
+const buttonSair = document.querySelector('#buttonSair')
+
+buttonSair.addEventListener('click', logout)
+
 
 function ativarIconeDesativo(){
     iconeAtivo.classList.remove('ativo')
@@ -47,13 +51,18 @@ function getEmailUser(user){
 }
 
 
-
-
-
-
 firebase.auth().onAuthStateChanged(user => {
     if(user){
-        // console.log('usuário: ', user.uid)
+        if(user){
+            console.log('usuário existe', user)
+            usersInfo(user)
+            const disableLogin = document.querySelector('.activeLogin')
+            const disableCadastro = document.querySelector('.activeCadastro')
+            disableLogin.classList.add('desativado')
+            disableCadastro.classList.add('desativado')
+        }else{
+            buttonSair.classList.add('desativado')
+        }
         usersInfo(user)
         getEmailUser(user)
     }
@@ -68,9 +77,28 @@ function usersInfo(user){
         .then(snapshot => {
             const inforUsers = snapshot.docs.map(doc => doc.data())
             addTransaction(inforUsers)
-            validateUid(inforUsers)
-
+            getNameUser(inforUsers)
         })
+}
+
+function getNameUser(inforUsers){
+    inforUsers.forEach(dadosUsuario => {
+
+        const userName = document.querySelector('.userName')
+
+        userName.innerHTML = 'Olá, ' + dadosUsuario.nome
+        console.log(dadosUsuario.nome)
+        console.log(inforUsers)
+    });
+}
+
+function logout(){
+    firebase.auth().signOut().then( () => {
+        window.location.href = '../../Ghabriel/login/index.html';
+        console.log('deu certo')
+    }).catch( () =>{
+        alert('Erro ao sair')
+    })
 }
 
 
@@ -79,6 +107,16 @@ function addTransaction(infoUsers){
 
     infoUsers.forEach(infoUsers => {
 
+        const uidUser = infoUsers.user.uid
+        console.log(uidUser)
+        if(uidUser !== ''){
+            openModalButton.classList.remove('open-modal')
+            openModalButton.classList.add('dadosCadastrado')
+
+        }else{
+            console.log('uid não existe')
+        }
+        
         const nome = document.getElementById('nomeFire')
         const sobrenome = document.getElementById('sobrenomeFire')
         const bairro = document.getElementById('bairroFire')
@@ -93,15 +131,17 @@ function addTransaction(infoUsers){
         numero.innerHTML = infoUsers.numero
         telefone.innerHTML = infoUsers.telefone
 
-    });
 
+
+    });
 }
+
 
 const toggleModal = () => {
     [modal, fade].forEach((el) => el.classList.toggle("hide"))
 }
 
-[openModalButton, closeModalButton, fade].forEach((el) => {
+[openModalButton, buttonSaveTransaction, fade, closeModalButton].forEach((el) => {
     el.addEventListener('click', () => toggleModal())
 })
 
@@ -109,18 +149,17 @@ const toggleModal = () => {
 
 
 function saveTransaction(){
-    showLoading()
     const infoUsers = creatInfoDados();
     firebase.firestore()
     .collection('infoUsers')
     .add(infoUsers)
     .then( () => {
-        hidenLoading();
-        window.location.href = "../DadosUsuarios/dadosUsuarios.html";
+        // hidenLoading();
+        window.location.href = "../../henrique oliveira/home.html";
     }).catch( () => {
-        hidenLoading()
         alert('Erro ao salvar seus dados')
     })
+
 }
 
 

@@ -137,14 +137,7 @@
 }
 
 .dadosCadastrado{
-    border: none;
-    color: white;
-    border-radius: 6px;
-    font-size: 18px;
-    background-color: #c5c5c5;
-    padding: 5px 25px;
-    margin-bottom: 25px;
-    cursor: not-allowed!important;
+display: none;
 }
 
 #fade, #modal{
