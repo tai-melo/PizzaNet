@@ -1,4 +1,6 @@
 document.getElementById("myFrame").onload = function () { carregar() };
+const finalizarCasdastro = document.querySelector(".finalizar");
+finalizarCasdastro.addEventListener('click', popUpFinalizado);
 
 const calculationTaxa = Math.floor(Math.random() * 40).toFixed(0)
 
@@ -78,3 +80,12 @@ const add = document.querySelectorAll('.addPedido').forEach((element) => {
 })
 
 
+function popUpFinalizado(){
+  return Swal.fire({
+    iconColor: '#15AF5F',
+    confirmButtonColor: '#15AF5F',
+    icon: 'success',
+    title: 'Pedido Realizado',
+    text: 'Seu pedido foi realizado com sucesso'
+  });
+}
