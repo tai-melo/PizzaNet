@@ -8,6 +8,9 @@ const openModalButton = document.querySelector('.open-modal')
 const closeModalButton = document.querySelector('#close-modal')
 const modal = document.querySelector('#modal')
 const fade = document.querySelector('#fade')
+const textoAlert = document.querySelector('.textoAlert')
+const inputCadastro = document.querySelectorAll('#modal-body input')
+
 
 const userData = document.querySelector('.UserData')
 const containerbutton = document.querySelector('.containerButton')
@@ -20,6 +23,7 @@ buttonSaveTransaction.addEventListener('click', saveTransaction)
 
 iconeTituloDesativo.addEventListener('click', ativarIconeDesativo)
 iconeTituloAtivo.addEventListener('click', ativarIconeAtivo)
+
 
 const buttonSair = document.querySelector('#buttonSair')
 
@@ -112,7 +116,11 @@ function addTransaction(infoUsers){
         if(uidUser !== ''){
             openModalButton.classList.remove('open-modal')
             openModalButton.classList.add('dadosCadastrado')
-
+            buttonSaveTransaction.classList.remove('saveTransaction')
+            buttonSaveTransaction.classList.add('desativado')
+            textoAlert.classList.remove('desativado')
+            textoAlert.innerHTML = "Dados do usuário já cadastrado"
+            inputCadastro.forEach((item) => item.classList.add('desativado'))
         }else{
             console.log('uid não existe')
         }
@@ -141,25 +149,79 @@ const toggleModal = () => {
     [modal, fade].forEach((el) => el.classList.toggle("hide"))
 }
 
-[openModalButton, buttonSaveTransaction, fade, closeModalButton].forEach((el) => {
+[openModalButton, fade, closeModalButton].forEach((el) => {
     el.addEventListener('click', () => toggleModal())
 })
 
-
-
+const formError = {
+    nomeError: () => document.getElementById('errorNome'),
+    sobrenomeError: () => document.getElementById('errorSobrenome'),
+    bairroError: () => document.getElementById('errorBairro'),
+    ruaError: () => document.getElementById('errorRua'),
+    numeroError: () => document.getElementById('errorNumero'),
+    telefoneError: () => document.getElementById('errorTelefone'),
+}
+const form = {
+    nome: () => document.getElementById('name'),
+    sobrenome: () => document.getElementById('lastName'),
+    bairro: () => document.getElementById('bairro'),
+    rua: () => document.getElementById('rua'),
+    numero: () => document.getElementById('number'),
+    telefone: () => document.getElementById('phone'),
+}
 
 function saveTransaction(){
-    const infoUsers = creatInfoDados();
-    firebase.firestore()
-    .collection('infoUsers')
-    .add(infoUsers)
-    .then( () => {
-        // hidenLoading();
-        window.location.href = "../../henrique oliveira/home.html";
-    }).catch( () => {
-        alert('Erro ao salvar seus dados')
-    })
+    validatedFormModal()
 
+
+}
+
+
+function validatedFormModal(){
+
+    if(form.nome().value === '' || form.nome() < 2){
+        // Swal.fire('Campo nome vazio, preencha para proseguir')
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Campo nome vazio, preencha para proseguir'
+        });
+    }else if(form.sobrenome().value === ''){
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Campo sobrenome vazio, preencha para proseguir'
+        });
+    }else if(form.bairro().value === ""){
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Campo bairro vazio, preencha para proseguir'
+        });
+    }else if(form.rua().value === ''){
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Campo rua vazio, preencha para proseguir'
+        });
+    }else if(form.numero().value === "e" || form.numero().value === ''){
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Digite apenas números ou o campo número está vazio'
+        });
+    }else if(form.telefone().value === '' || form.telefone().value === "e"){
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Digite apenas números ou o campo telefone está vazio'
+        });
+    }else{
+        const infoUsers = creatInfoDados();
+        firebase.firestore()
+        .collection('infoUsers')
+        .add(infoUsers)
+        .then( () => {
+            // hidenLoading();
+            window.location.href = "../../henrique oliveira/home.html";
+        }).catch( () => {
+            alert('Erro ao salvar seus dados')
+        })
+    }
 }
 
 
@@ -180,14 +242,10 @@ function creatInfoDados(){
 
 
 
-const form = {
-    nome: () => document.getElementById('name'),
-    sobrenome: () => document.getElementById('lastName'),
-    bairro: () => document.getElementById('bairro'),
-    rua: () => document.getElementById('rua'),
-    numero: () => document.getElementById('number'),
-    telefone: () => document.getElementById('phone'),
-}
+
+
+
+
 
 
 

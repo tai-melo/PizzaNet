@@ -126,13 +126,20 @@
             </div>
             <div id="modal-body">
               <input type="text" class="name" id="name" placeholder="Nome">
+              <div id="errorNome"></div>
               <input type="text" class="lastName" id="lastName" placeholder="Sobrenome">
+              <div id="errorSobrenome"></div>
               <input type="text" class="bairro" id="bairro" placeholder="Bairro">
+              <div id="errorBairro"></div>
               <input type="text" class="rua" id="rua" placeholder="Rua">
+              <div id="errorRua"></div>
               <input type="number" class="number" id="number" placeholder="Número">
+              <div id="errorNumero"></div>
               <input type="number" class="phone" id="phone" placeholder="Telefone">
+              <div id="errorTelefone"></div>
 
               <button type="button" class="saveTransaction">Salvar</button>
+              <p class="textoAlert desativado"></p>
             </div>
           </div>
 
@@ -223,6 +230,7 @@
   <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-firebase-compat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
 
 
   <script src="../login/firebase-init.js"></script>
