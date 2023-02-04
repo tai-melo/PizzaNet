@@ -80,6 +80,7 @@
     justify-content: center;
     align-items: center;
     /*background-image: url("assets develop/background-1336-751.png"); Nao PEGOU*/
+    height: 906.92px;
 
 }
 
@@ -98,10 +99,12 @@
     height: 117px;
     width: 800px;
     margin: 15px;
+    
     border-radius: 10px;
     box-shadow: 1px 1px 8px rgb(126, 126, 126);
     text-decoration: none;
     /*NAO PEGOU, tive que fazer um hover*/
+    padding: 2px 5px 1px 2px;
 }
 
 .imagem-artigo {
@@ -123,7 +126,7 @@
     /*1em = 16px*/
     font-weight: bold;
     background-color: #26262918;
-    width: 130px;
+    width: auto;
     height: 50px;
     border-radius: 40px;
     line-height: 45px;/*indica a posição que deseja o txt em relação a altura*/
@@ -141,14 +144,20 @@
 .main-noticias-paragrafo {
     text-decoration: none;
     color: black;
+        
 }
 
 .main-noticias-paragrafo-a {
+    display: ;
     text-decoration: none;
-    text-align: center;    /*NAO PEGOU*/
+     
     margin-left: 50px;
-    color: #000;
+    color: #000; 
     font-weight: bold;
+    
+    
+    /* height: 150px; */
+
 }
 
 .main-noticias-paragrafo-a:hover {
@@ -210,6 +219,8 @@ article.open {
 }
 
 /*------------------Media Queries-------------*/
+/* @media(min-width: ) */
+
 @media(max-width: 1120px) {
     .pages1 {
       gap: 5px;
@@ -318,7 +329,7 @@ article.open {
         /*1em = 16px*/
         font-weight: bold;
         background-color: #26262918;
-        width: 120px;
+        width: auto;
         height: 40px;
         border-radius: 40px;
         line-height: 35px;/*indica a posição que deseja o txt em relação a altura*/
@@ -404,7 +415,7 @@ article.open {
         /*1em = 16px*/
         font-weight: bold;
         background-color: #26262918;
-        width: 120px;
+        width: auto;
         height: 40px;
         border-radius: 40px;
         line-height: 35px;/*indica a posição que deseja o txt em relação a altura*/
@@ -501,7 +512,7 @@ article.open {
         /*1em = 16px*/
         font-weight: bold;
         background-color: #26262918;
-        width: 120px;
+        width: auto;
         height: 40px;
         border-radius: 40px;
         line-height: 35px;/*indica a posição que deseja o txt em relação a altura*/
