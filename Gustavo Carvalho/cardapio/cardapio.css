@@ -81,15 +81,34 @@
 .bi-journal-text {
   color: #FF0B0B;
   font-size: 50px;
+
 }
 
 .bi-cart3 {
   font-size: 50px;
+  z-index: 1;
 }
+
+/* #cont {
+  z-index: 2;
+  position: absolute;
+  display: none;
+  margin-top: 45px;
+  margin-left: 35px;
+  width: 20px;
+  height: 22px;
+  text-align: center;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #FF0B0B;
+} */
 
 .btnIcons {
   background-color: transparent;
   border: none;
+  display: flex;
+  flex-direction: row;
+  height: 13vh;
 }
 
 
@@ -146,7 +165,7 @@
   color: #fffafa;
   border: none;
   border-radius: 3px;
-  width: 140px;
+  width: 150px;
   font-size: 15px;
   height: 40px;
 }

@@ -1,6 +1,15 @@
 document.getElementById("myFrame").onload = function () { carregar() };
+
+let verificationCart = 0
+
 const finalizarCasdastro = document.querySelector(".finalizar");
-finalizarCasdastro.addEventListener('click', popUpFinalizado);
+finalizarCasdastro.addEventListener('click', () => {
+  if (verificationCart === 0) {
+    popUperror()
+  } else {
+    popUpFinalizado()
+  }
+});
 
 const calculationTaxa = Math.floor(Math.random() * 40).toFixed(0)
 
@@ -13,6 +22,7 @@ const divCardapio = document.getElementById('divCardapio')
 const divCarrinho = document.getElementById('divCarrinho')
 const iconCardapio = document.getElementById('iconCardapio')
 const iconCarrinho = document.getElementById('iconCarrinho')
+
 
 const divPedidos = document.getElementById('pedidos')
 
@@ -34,11 +44,19 @@ const cardapio = document.getElementById('cardapio').addEventListener('click', (
 let valorTotal = []
 
 const total = document.getElementById('total')
+// const cont = document.getElementById('cont')
+// let contPedidos = 0
 
 const add = document.querySelectorAll('.addPedido').forEach((element) => {
   element.addEventListener('click', () => {
 
     element.innerText = '✓'
+
+    // cont.style.display = 'inline'
+    // contPedidos++
+    // cont.innerHTML = `${contPedidos}`
+
+    verificationCart = 1
 
     setTimeout(() => {
       element.innerText = 'Fazer pedido'
@@ -71,21 +89,33 @@ const add = document.querySelectorAll('.addPedido').forEach((element) => {
 
       money = ''
       valorTotal = []
+      verificationCart = 0
+      // contPedidos = 0
+      // cont.style.display = 'none'
 
       pai.remove(pedido, preco)
-
     })
 
   })
 })
 
 
-function popUpFinalizado(){
+function popUpFinalizado() {
   return Swal.fire({
     iconColor: '#15AF5F',
     confirmButtonColor: '#15AF5F',
     icon: 'success',
     title: 'Pedido Realizado',
     text: 'Seu pedido foi realizado com sucesso'
+  });
+}
+
+function popUperror() {
+  return Swal.fire({
+    iconColor: '#FF0B0B',
+    confirmButtonColor: '#FF0B0B',
+    icon: 'error',
+    title: 'Adicione itens ao seu carrinho para finalizar pedido.',
+    text: ''
   });
 }
