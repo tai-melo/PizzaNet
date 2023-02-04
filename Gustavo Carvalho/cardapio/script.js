@@ -115,7 +115,7 @@ function popUperror() {
     iconColor: '#FF0B0B',
     confirmButtonColor: '#FF0B0B',
     icon: 'error',
-    title: 'Adicione itens ao seu carrinho para finalizar pedido.',
-    text: ''
+    title: 'Carrinho vazio',
+    text: 'Adicione itens ao seu carrinho para finalizar pedido.'
   });
 }
