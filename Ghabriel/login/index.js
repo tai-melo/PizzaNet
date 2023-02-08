@@ -1,7 +1,6 @@
 firebase.auth().onAuthStateChanged(user => {
     if(user){
-        // window.location = '../../henrique oliveira/home.html'
-        // window.location = '../../henrique oliveira/home.html'
+        window.location = '../../henrique oliveira/home.html'
     }
 })
 
