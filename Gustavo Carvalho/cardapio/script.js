@@ -44,17 +44,17 @@ const cardapio = document.getElementById('cardapio').addEventListener('click', (
 let valorTotal = []
 
 const total = document.getElementById('total')
-// const cont = document.getElementById('cont')
-// let contPedidos = 0
+const cont = document.getElementById('cont')
+let contPedidos = 0
 
 const add = document.querySelectorAll('.addPedido').forEach((element) => {
   element.addEventListener('click', () => {
 
     element.innerText = '✓'
 
-    // cont.style.display = 'inline'
-    // contPedidos++
-    // cont.innerHTML = `${contPedidos}`
+    cont.style.display = 'inline'
+    contPedidos++
+    cont.innerHTML = `${contPedidos}`
 
     verificationCart = 1
 
@@ -90,8 +90,8 @@ const add = document.querySelectorAll('.addPedido').forEach((element) => {
       money = ''
       valorTotal = []
       verificationCart = 0
-      // contPedidos = 0
-      // cont.style.display = 'none'
+      contPedidos = 0
+      cont.style.display = 'none'
 
       pai.remove(pedido, preco)
     })

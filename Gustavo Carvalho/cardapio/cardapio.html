@@ -80,10 +80,13 @@
       <div class="text-cardapio">
         <button id="cardapio" class="btnIcons"><i id="iconCardapio" class="bi bi-journal-text"></i></button>
         <button id="carrinho" class="btnIcons"><i id="iconCarrinho" class="bi bi-cart3"></i>
-          <!-- <p id="cont"></p> -->
+          <p id="cont"></p>
         </button>
       </div>
-      <hr class="line">
+      <div id="areaLine">
+        <hr class="lineTop">
+
+      </div>
 
 
 
@@ -104,7 +107,6 @@
 
                 <div class="pizzas-buttons">
                   <a class="a" href="../../melissa gouveia/napolitana.html"><button>Modo de preparo</button></a>
-
                   <button data-value="99.99" name="Napolitana" value="99,99" class="addPedido">Fazer pedido</button>
                 </div>
 
@@ -190,7 +192,8 @@
                 </div>
 
                 <div class="pizzas-buttons">
-                  <a class="a" href="../../henrique oliveira/beterraba/beterraba.html"><button>Modo de preparo</button></a>
+                  <a class="a" href="../../henrique oliveira/beterraba/beterraba.html"><button>Modo de
+                      preparo</button></a>
                   <button data-value="79.99" name="Beterraba" value="79,99" class="addPedido">Fazer pedido</button>
 
                 </div>
@@ -346,15 +349,15 @@
               <hr class="line">
             </div>
             <div class="taxa">
-              <p style="font-size: 17px;" class="titlePedidos">Taxa de envio:</p>
-              <p style="font-size: 17px;" id="taxaLoader" class="titlePedidos"></p>
+              <p class="textsTaxa">Taxa de envio:</p>
+              <p id="taxaLoader" class="textsTaxa"></p>
             </div>
             <div id="linha">
               <hr class="line">
             </div>
             <div class="taxa">
-              <p style="font-size: 20px;" class="titlePedidos">Total:</p>
-              <p style="font-size: 20px;" id="total" class="titlePedidos"></p>
+              <p class="textsTotal">Total:</p>
+              <p id="total" class="textsTotal"></p>
             </div>
             <button class="finalizar">Finalizar Compra</button>
             <button id="esvaziar" class="finalizar">Esvaziar carrinho</button>
