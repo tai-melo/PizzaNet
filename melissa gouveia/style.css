@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
 .a {
   text-decoration: none;
@@ -88,10 +88,6 @@
   height: 6vh;
 }
 
-.textHover:hover {
-  border-bottom: 2px solid black;
-}
-
 .btns {
   font-weight: 400;
   font-size: 18px;
@@ -107,6 +103,123 @@
   font-size: 25px;
 }
 
+#container {
+  position: relative;
+  display: inline-block;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-home {
+  width: 100%;
+}
+
+.figcaption1 {
+  position: absolute;
+  top: 150px;
+  right: 438px;
+  font-size: 80px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+.figcaption2 {
+  position: absolute;
+  top: 290px;
+  right: 335px;
+  width: 700px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+.btn-cardapio {
+  position: absolute;
+  top: 430px;
+  right: 706px;
+  border: none;
+  background-color:#E63030;
+  font-size: 20px;
+  font-style: bold;
+  border-radius: 5px;
+  padding: 5px 20px;
+  outline: none;
+  color: white;
+  transition: background-color .3s;  
+}
+
+.btn-cardapio:hover {
+  background-color: #ECECEC;
+  color: #E63030;
+}
+
+.btn-quem-somos {
+  position: absolute;
+  top: 430px;
+  right: 523px;
+  border: none;
+  background-color:#E63030;
+  font-size: 20px;
+  font-style: bold;
+  border-radius: 5px;
+  padding: 5px 20px;
+  outline: none;
+  color: white;
+  transition: background-color .3s;  
+}
+
+.btn-quem-somos:hover {
+  background-color: #ECECEC;
+  color: #E63030;
+}
+
+.pedido-btn {
+  padding: 40px 0;
+}
+
+.btn-pedido {
+  border: none;
+  background-color:#E63030;
+  font-size: 20px;
+  font-style: bold;
+  border-radius: 5px;
+  padding: 5px 20px;
+  outline: none;
+  color: white;
+  transition: background-color .3s;  
+}
+
+.btn-pedido:hover {
+  background-color: #ECECEC;
+  color: #E63030;
+}
+
+.titulo-home {
+  padding: 20px 0 20px 0;
+}
+
+.text-home {
+  width: 500px;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.img-card {
+  border-radius: 15px;
+  box-shadow: 7px 5px 5px dimgrey;
+  margin: 15px;
+}
 
 .title_1 {
   padding: 50px;
