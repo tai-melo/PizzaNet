@@ -103,46 +103,42 @@
   font-size: 25px;
 }
 
-#container {
-  position: relative;
-  display: inline-block;
-}
 
-.main {
+.background {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.background-home {
+.blackground-home {
+  position: relative;
   width: 100%;
 }
 
-.figcaption1 {
+.text-background {
   position: absolute;
-  top: 150px;
-  right: 438px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 220px;
+}
+
+.text-home1 {
+  text-align: center;
   font-size: 80px;
   color: white;
   text-shadow: 0px 0px 5px black;
 }
 
-.figcaption2 {
-  position: absolute;
-  top: 290px;
-  right: 335px;
+.text-home2 {
   width: 700px;
-  text-align: center;
   font-size: 30px;
+  text-align: center;
   color: white;
   text-shadow: 0px 0px 5px black;
+  padding-bottom: 25px;
 }
 
 .btn-cardapio {
-  position: absolute;
-  top: 430px;
-  right: 706px;
   border: none;
   background-color:#E63030;
   font-size: 20px;
@@ -159,24 +155,11 @@
   color: #E63030;
 }
 
-.btn-quem-somos {
-  position: absolute;
-  top: 430px;
-  right: 523px;
-  border: none;
-  background-color:#E63030;
-  font-size: 20px;
-  font-style: bold;
-  border-radius: 5px;
-  padding: 5px 20px;
-  outline: none;
-  color: white;
-  transition: background-color .3s;  
-}
-
-.btn-quem-somos:hover {
-  background-color: #ECECEC;
-  color: #E63030;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .pedido-btn {
@@ -376,7 +359,7 @@
   color: #999;
 }
 
-@media(max-width: 1120px) {
+@media(max-width: 1120px) {  
   .pages1 {
     gap: 5px;
     margin-left: 0vh;
@@ -388,7 +371,10 @@
 }
 
 @media(max-width: 990px) {
-
+  #cards {
+    display: flex;
+    flex-direction: column;
+  }
   .text,
   .whtas-icon,
   .bi-bag,
@@ -457,8 +443,21 @@
   
 }
 
+@media(max-width: 740px) {
+  #text-home1 {
+    font-size: 60px;
+  }
+  #text-home2 {
+    font-size: 20px;
+    width: 500px;
+  }
+}
+
 
 @media(max-width: 605px) {
+  #text-home {
+    width: 400px;
+  }
 
   #offcanvasNavbar {
     width: 40%;
@@ -471,6 +470,31 @@
 }
 
 @media(max-width: 500px) {
+  #text-home {
+    width: 300px;
+  }
+
+  #titulo-home {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #blackground-home {
+    width: 100%;
+  }
+
+  #text-background {
+    top: 110px;
+  }
+
+  #text-home1 {
+    font-size: 40px;
+  }
+
+  #text-home2 {
+    width: 300px;
+    font-size: 12px;
+  }
 
   #imgLogo {
     width: 140px;
@@ -500,7 +524,6 @@
 }
 
 @media(max-width: 350px) {
-
   #offcanvasNavbar {
     width: 50%;
   }
