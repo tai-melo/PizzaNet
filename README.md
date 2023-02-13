@@ -31,7 +31,9 @@ Acesse:
 Para a parte de banco de dados do projeto, foi desenvolvido o diagrama de entidade e relacionamento, para posterior aplicação em banco físico.
 
 Acesse nosso Diagrama de Entidade Relacionamento:
+
 🔗https://drive.google.com/file/d/1qfQmxIz4swl7jUjTtiT7-nQbcY4T855m/view?usp=sharing🔗
 
 E nosso conjunto de comandos para criação de banco de dados (SQL):
+
 🔗https://docs.google.com/document/d/14dlXkjTvcbTHthMXXgap1JYzrj2EXkuPbP83JC3_YSc/edit?usp=sharing🔗
