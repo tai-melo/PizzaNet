@@ -39,21 +39,34 @@ function usersInfo(user){
         .where('user.uid', '==', user.uid)
         .get()
         .then(snapshot => {
-            const inforUsers = snapshot.docs.map(doc => doc.data())
+            const inforUsers = snapshot.docs.map(doc => ({
+                ...doc.data(),
+                uid: doc.id
+            }))
             getNameUser(inforUsers)
+            uidUser(inforUsers)
         })
 }
 
 
 function getNameUser(inforUsers){
     inforUsers.forEach(dadosUsuario => {
-
         const userName = document.querySelector('.userName')
-
         userName.innerHTML = 'Olá, ' + dadosUsuario.nome
         console.log(dadosUsuario.nome)
         console.log(inforUsers)
     });
 }
 
+
+function uidUser(inforUsers){
+    inforUsers.forEach(uidUser => {
+        console.log(uidUser.uid)
+        const buttonSuaConta = document.querySelector('.buttonSuaConta')
+        buttonSuaConta.addEventListener('click', () => {
+            window.location.href = '../Ghabriel/DadosUsuarios/dadosUsuarios.html?uid=' + uidUser.uid
+        })
+    })
+
+}
 

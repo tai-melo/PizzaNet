@@ -218,7 +218,7 @@ display: none;
     color: #FF0B0B;
 }
 
-.saveTransaction{
+.saveTransaction, .changeTransaction{
     width: 100%;
     border: none;
     color: white;
