@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
 .a {
   text-decoration: none;
@@ -88,10 +88,6 @@
   height: 6vh;
 }
 
-.textHover:hover {
-  border-bottom: 2px solid black;
-}
-
 .btns {
   font-weight: 400;
   font-size: 18px;
@@ -107,6 +103,106 @@
   font-size: 25px;
 }
 
+
+.background {
+  display: flex;
+  justify-content: center;
+}
+
+.blackground-home {
+  position: relative;
+  width: 100%;
+}
+
+.text-background {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 220px;
+}
+
+.text-home1 {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+.text-home2 {
+  width: 700px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  padding-bottom: 25px;
+}
+
+.btn-cardapio {
+  border: none;
+  background-color:#E63030;
+  font-size: 20px;
+  font-style: bold;
+  border-radius: 5px;
+  padding: 5px 20px;
+  outline: none;
+  color: white;
+  transition: background-color .3s;  
+}
+
+.btn-cardapio:hover {
+  background-color: #ECECEC;
+  color: #E63030;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pedido-btn {
+  padding: 40px 0;
+}
+
+.btn-pedido {
+  border: none;
+  background-color:#E63030;
+  font-size: 20px;
+  font-style: bold;
+  border-radius: 5px;
+  padding: 5px 20px;
+  outline: none;
+  color: white;
+  transition: background-color .3s;  
+}
+
+.btn-pedido:hover {
+  background-color: #ECECEC;
+  color: #E63030;
+}
+
+.titulo-home {
+  padding: 20px 0 20px 0;
+}
+
+.text-home {
+  width: 500px;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.img-card {
+  border-radius: 15px;
+  box-shadow: 7px 5px 5px dimgrey;
+  margin: 15px;
+}
 
 .title_1 {
   padding: 50px;
@@ -263,7 +359,7 @@
   color: #999;
 }
 
-@media(max-width: 1120px) {
+@media(max-width: 1120px) {  
   .pages1 {
     gap: 5px;
     margin-left: 0vh;
@@ -275,7 +371,10 @@
 }
 
 @media(max-width: 990px) {
-
+  #cards {
+    display: flex;
+    flex-direction: column;
+  }
   .text,
   .whtas-icon,
   .bi-bag,
@@ -344,8 +443,21 @@
   
 }
 
+@media(max-width: 740px) {
+  #text-home1 {
+    font-size: 60px;
+  }
+  #text-home2 {
+    font-size: 20px;
+    width: 500px;
+  }
+}
+
 
 @media(max-width: 605px) {
+  #text-home {
+    width: 400px;
+  }
 
   #offcanvasNavbar {
     width: 40%;
@@ -358,6 +470,31 @@
 }
 
 @media(max-width: 500px) {
+  #text-home {
+    width: 300px;
+  }
+
+  #titulo-home {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #blackground-home {
+    width: 100%;
+  }
+
+  #text-background {
+    top: 110px;
+  }
+
+  #text-home1 {
+    font-size: 40px;
+  }
+
+  #text-home2 {
+    width: 300px;
+    font-size: 12px;
+  }
 
   #imgLogo {
     width: 140px;
@@ -387,7 +524,6 @@
 }
 
 @media(max-width: 350px) {
-
   #offcanvasNavbar {
     width: 50%;
   }

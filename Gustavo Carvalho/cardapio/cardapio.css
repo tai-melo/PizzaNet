@@ -11,7 +11,7 @@
   color: #000;
 }
 
-#body {
+body {
   height: 100vh;
   width: 100%;
 }
@@ -65,7 +65,19 @@
   border: 3px solid #FF0B0B;
 }
 
-
+#cont {
+  z-index: 2;
+  position: absolute;
+  display: none;
+  margin-top: 45px;
+  margin-left: 35px;
+  width: 20px;
+  height: 22px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #FF0B0B;
+}
 
 .text-cardapio {
   display: flex;
@@ -89,34 +101,26 @@
   z-index: 1;
 }
 
-/* #cont {
-  z-index: 2;
-  position: absolute;
-  display: none;
-  margin-top: 45px;
-  margin-left: 35px;
-  width: 20px;
-  height: 22px;
-  text-align: center;
-  border-radius: 15px;
-  color: #fff;
-  background-color: #FF0B0B;
-} */
-
 .btnIcons {
   background-color: transparent;
   border: none;
   display: flex;
   flex-direction: row;
-  height: 13vh;
 }
 
+#areaLine {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  width: 100%;
+}
 
-.line {
+.lineTop {
   opacity: 1 !important;
-  margin: 0 40vh;
   border: 1px solid #FF0B0B;
   margin-bottom: 15px;
+  width: 80%;
 }
 
 
@@ -125,6 +129,11 @@
 .refrigerantes {
   display: flex;
   justify-content: space-around;
+}
+
+.pizzas-salgadas,
+.pizzas-doces {
+  text-align: center;
 }
 
 
@@ -165,9 +174,10 @@
   color: #fffafa;
   border: none;
   border-radius: 3px;
-  width: 150px;
+  width: 145px;
   font-size: 15px;
   height: 40px;
+  margin-right: 10px;
 }
 
 .pizzas-buttons button:hover,
@@ -185,6 +195,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 
@@ -208,7 +219,6 @@
 
 .taxa {
   width: 100%;
-  border-radius: 10px;
   padding: 0px 50px 20px 50px;
   display: flex;
   flex-direction: row;
@@ -222,6 +232,20 @@
   font-weight: bold;
 }
 
+.textsTaxa {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.textsTotal {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #divPaiPedidos {
   display: flex;
   flex-direction: row;
@@ -231,7 +255,18 @@
 }
 
 #linha {
-  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.line {
+  opacity: 1 !important;
+  border: 1px solid #FF0B0B;
+  margin-bottom: 15px;
+  width: 90%;
 }
 
 .finalizar {
@@ -296,12 +331,56 @@
   color: #999;
 }
 
+
 @media(max-width: 1120px) {
   .pages1 {
     gap: 5px;
     margin-left: 0vh;
   }
+
+  .pizzas-buttons button {
+    width: 130px;
+    font-size: 12px;
+    height: 30px;
+  }
+
+  .bebidas-buttons button {
+    width: 100px;
+    font-size: 12px;
+    height: 30px;
+  }
+
+  .bebidas-texto {
+    font-size: 14px;
+  }
+
+  #Section-carrinho {
+    width: 70%;
+  }
+
+  .finalizar {
+    border: none;
+    background-color: #15AF5F;
+    color: #fff;
+    padding: 1vh 1vh;
+    border-radius: 5px;
+  }
+
 }
+
+@media(max-width: 1020px) {
+
+  .pizzas-fundo,
+  .bebidas-fundo {
+    width: 300px;
+  }
+
+  .pizzas-buttons button,
+  .bebidas-buttons button {
+    padding: 5px;
+  }
+}
+
 
 @media(max-width: 990px) {
 
@@ -337,6 +416,55 @@
   }
 }
 
+@media(max-width: 750px) {
+
+  #cardapio-pizzas,
+  .cardapio-bebidas,
+  .refrigerantes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pizzas-fundo,
+  .bebidas-fundo {
+    width: 100%;
+  }
+
+  .container-principal {
+    padding: 25px;
+  }
+
+  .pizzas-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .texts {
+    font-size: 15px;
+    padding: 0px 20px 20px 20px;
+  }
+
+  .titlePedidos {
+    font-size: 20px;
+  }
+
+  .textsTaxa {
+    font-size: 15px;
+  }
+
+  .textsTotal {
+    font-size: 16px;
+  }
+
+  .taxa {
+    padding: 0px 20px 20px 20px;
+  }
+
+}
+
+
 @media(max-width: 605px) {
 
   #offcanvasNavbar {
@@ -345,6 +473,10 @@
 
   .text {
     font-size: 13px;
+  }
+
+  .titlePedidos {
+    text-align: center;
   }
 }
 
@@ -367,70 +499,18 @@
 
   #footerIcons {
     flex-wrap: wrap;
-
-
     margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-}
-
-@media(max-width: 350px) {
-
-  #offcanvasNavbar {
-    width: 50%;
-  }
-}
-
-@media(max-width: 1020px) {
-
-  .pizzas-fundo,
-  .bebidas-fundo {
-    width: 300px;
-  }
-
-  .pizzas-buttons button,
-  .bebidas-buttons button {
-    padding: 5px;
-  }
-}
-
-
-@media(max-width: 750px) {
-
-  #cardapio-pizzas,
-  .cardapio-bebidas,
-  .refrigerantes {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .pizzas-fundo,
-  .bebidas-fundo {
-    width: 100%;
-  }
-
-  .container-principal {
-    padding: 25px;
-  }
-
-  .line {
-    margin: 0 15vh;
-  }
-}
-
-
-@media(max-width: 500px) {
 
   .pizzas-texto,
   .bebidas-texto {
     display: flex;
-    /* justify-content: center; */
     text-align: center;
     flex-direction: column;
-    /* padding: 0 20px; */
     font-weight: bold;
   }
 
@@ -438,6 +518,8 @@
   .bebidas-buttons {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .pizzas-buttons button,
@@ -447,5 +529,46 @@
 
   .line {
     opacity: 0;
+  }
+
+  .texts {
+    font-size: 13px;
+    padding: 0px 10px 20px 10px;
+  }
+
+  .titlePedidos {
+    font-size: 18px;
+  }
+
+  .textsTaxa {
+    font-size: 13px;
+  }
+
+  .textsTotal {
+    font-size: 15px;
+  }
+
+  .taxa {
+    padding: 0px 10px 20px 10px;
+  }
+
+  .finalizar {
+    padding: 0.5vh 0.5vh;
+    font-size: 12px;
+  }
+
+  #esvaziar {
+    font-size: 10px;
+  }
+
+  #Section-carrinho {
+    width: 85%;
+  }
+}
+
+@media(max-width: 350px) {
+
+  #offcanvasNavbar {
+    width: 50%;
   }
 }

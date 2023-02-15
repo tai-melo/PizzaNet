@@ -1,5 +1,3 @@
-document.getElementById("myFrame").onload = function () { carregar() };
-
 let verificationCart = 0
 
 const finalizarCasdastro = document.querySelector(".finalizar");
@@ -10,13 +8,6 @@ finalizarCasdastro.addEventListener('click', () => {
     popUpFinalizado()
   }
 });
-
-const calculationTaxa = Math.floor(Math.random() * 40).toFixed(0)
-
-function carregar() {
-  const taxa = document.getElementById('taxaLoader')
-  taxa.innerText = `R$ ${calculationTaxa},00`
-}
 
 const divCardapio = document.getElementById('divCardapio')
 const divCarrinho = document.getElementById('divCarrinho')
@@ -44,17 +35,17 @@ const cardapio = document.getElementById('cardapio').addEventListener('click', (
 let valorTotal = []
 
 const total = document.getElementById('total')
-// const cont = document.getElementById('cont')
-// let contPedidos = 0
+const cont = document.getElementById('cont')
+let contPedidos = 0
 
 const add = document.querySelectorAll('.addPedido').forEach((element) => {
   element.addEventListener('click', () => {
 
     element.innerText = '✓'
 
-    // cont.style.display = 'inline'
-    // contPedidos++
-    // cont.innerHTML = `${contPedidos}`
+    cont.style.display = 'inline'
+    contPedidos++
+    cont.innerHTML = `${contPedidos}`
 
     verificationCart = 1
 
@@ -64,7 +55,7 @@ const add = document.querySelectorAll('.addPedido').forEach((element) => {
 
     valorTotal.push(element.dataset)
 
-    let money = valorTotal.reduce((accum, element) => { return accum = Number(accum) + Number(element.value) }, calculationTaxa)
+    let money = valorTotal.reduce((accum, element) => { return accum = Number(accum) + Number(element.value) }, 15)
     total.innerText = `R$ ${(money).toFixed(2)}`
 
     const pai = document.createElement('div')
@@ -90,8 +81,8 @@ const add = document.querySelectorAll('.addPedido').forEach((element) => {
       money = ''
       valorTotal = []
       verificationCart = 0
-      // contPedidos = 0
-      // cont.style.display = 'none'
+      contPedidos = 0
+      cont.style.display = 'none'
 
       pai.remove(pedido, preco)
     })

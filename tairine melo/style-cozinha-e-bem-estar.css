@@ -70,22 +70,38 @@
     
 }
 
-/* .h3-max{
-        font-size: max(5vh, .9em);
-} */
+
 
 #noticias_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-image: url("assets develop/background-1336-751.png"); Nao PEGOU*/
+    
     height: 906.92px;
 
 }
 
+
+
+.familia-cozinhando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    border-radius: 50%; /* imagem redonda */
+}
+
+.familia-cozinhando:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: .9s; 
+}
+
+
 #noticias_main_title {
-    margin: 100px;
+    margin: 90px;
     /*top right bottom left*/
     display: flex;
     justify-content: flex-start;
@@ -113,9 +129,9 @@
 
 .conteudo {
     width: 900px;
-    max-height: 275px; /* 270px -PARA O READ MORE max-height: 275px; */
+    max-height: 275px; 
     overflow: hidden;  /*OVERFLOW, esconde o que excede da box*/
-    transition: max-height 0.4s;
+    transition: max-height .2s;  /* .4s */
 }
  
 
@@ -148,7 +164,7 @@
 }
 
 .main-noticias-paragrafo-a {
-    display: ;
+    
     text-decoration: none;
      
     margin-left: 50px;
@@ -171,10 +187,16 @@
 article.open {
     /*classe para abrir o article. Usando a função JS*/
     max-height: 1000px;
-    transition: 0.5s;
+    transition: .9s; /*  0.5s;*/
     width: 900px;
-    /* position: relative;  */
+    
 }
+
+.img-gone {
+    display: none;
+}
+
+/* ----------------------- */
 
 
 /* footer */
@@ -219,7 +241,7 @@ article.open {
 }
 
 /*------------------Media Queries-------------*/
-/* @media(min-width: ) */
+
 
 @media(max-width: 1120px) {
     .pages1 {
@@ -293,7 +315,7 @@ article.open {
         border-radius: 10px;
         box-shadow: 1px 1px 8px rgb(126, 126, 126);
         text-decoration: none;
-        /*NAO PEGOU, tive que fazer um hover*/
+        
     }
 
     .main-noticias-paragrafo {
@@ -305,12 +327,12 @@ article.open {
     .main-noticias-paragrafo-a {
         
         text-decoration: none;
-        text-align: center;    /*NAO PEGOU*/
+        text-align: center;    
         margin-left: 50px;
         color: #000;
         font-weight: bold;
         font-size: 14px;
-        /* padding: 8px; */
+        
     }
 
     /* ----------Estilo Dinâmico ------- */
@@ -319,7 +341,7 @@ article.open {
         max-height: 1000px;
         transition: 0.5s;
         width: 700px
-        /* position: relative;  */
+        
     }
 
     #botao-mais {
@@ -368,7 +390,7 @@ article.open {
         display: flex;
         justify-content: center;
         align-items: center;
-        /*NAO PEGOU, tive que fazer um hover*/
+        
     }
 
     .imagem-artigo{
@@ -385,17 +407,13 @@ article.open {
     }
 
     .main-noticias-paragrafo-a {
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; */
         text-decoration: none;
         margin-left: 30px;
         color: #000;
         font-weight: bold;
         font-size: 14px;
         padding: 10px; 
-        /* width: 200px; */ /* jjjjjjjjjjjj */
+        /* width: 200px; */
         
     }
 
@@ -405,7 +423,7 @@ article.open {
         max-height: 1000px;
         transition: 0.5s;
         width: 550px
-        /* position: relative;  */
+        
     }
 
     #botao-mais {
@@ -472,20 +490,9 @@ article.open {
         display: none;
     }
 
-    /* .main-noticias-paragrafo {
-        /display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-         
-        
-    }
- */
+  
     .main-noticias-paragrafo-a {
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; */
+        
         text-decoration: none;
         margin-left: 20px;
         color: #000;
@@ -501,7 +508,7 @@ article.open {
         /*classe para abrir o article. Usando a função JS*/
         max-height: 1000px;
         transition: 0.5s;
-        width: 390px
+        width: 400px;
         /* position: relative;  */
     }
 
@@ -554,9 +561,48 @@ article.open {
     }
   }
   
+  @media(max-width:415px){
+    .conteudo{
+        
+        width: 340px;
+        max-height: 220px; 
+       
+    } 
+
+    .link-noticias {
+        /*essa são as Divs*/
+        background-color: rgb(248, 245, 245);
+        border: 1px solid rgb(233, 233, 233);
+        height: 100px;
+        width: 320px; /* 550px */
+        margin: 9px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px rgb(160, 159, 159);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        /*NAO PEGOU, tive que fazer um hover*/
+    }
+
+    /* ----------Estilo Dinâmico ------- */
+    article.open {
+        /*classe para abrir o article. Usando a função JS*/
+        max-height: 1000px;
+        transition: 0.5s;
+        width: 340px;
+        /* position: relative;  */
+    }
+
+  }
+
   @media(max-width: 350px) {
   
     #offcanvasNavbar {
       width: 50%;
     }
+    .familia-cozinhando{  
+        width: 290px;
   }
+}

@@ -1,3 +1,42 @@
+
+function getUserUid(){
+    const urlParams =  new URLSearchParams(window.location.search);
+    return urlParams.get('uid')
+}
+
+function newUser(){
+    return getUserUid() ? false : true
+}
+
+function findUserUid(uid){
+
+    firebase.firestore()
+        .collection("infoUsers")
+        .doc(uid)
+        .get()
+        .then(doc => {
+            if(doc.exists){
+                findInfoUserScreen(doc.data())
+            }else{
+                alert('documento não encontrado')
+            }
+        })
+        .catch( () => {
+            alert('Erro ao recuperar documento')
+        })
+}
+
+function findInfoUserScreen(infoUsers){
+    form.nome().value = infoUsers.nome
+    form.sobrenome().value = infoUsers.sobrenome
+    form.bairro().value = infoUsers.bairro
+    form.rua().value = infoUsers.rua
+    form.numero().value = infoUsers.numero
+    form.telefone().value = infoUsers.telefone
+}
+
+
+
 const iconeAtivo = document.querySelector('.iconeAtivo')
 const iconeDesativo = document.querySelector('.iconeDesativo')
 
@@ -17,8 +56,11 @@ const containerbutton = document.querySelector('.containerButton')
 const formulario = document.querySelector('.formulario')
 
 const buttonSaveTransaction = document.querySelector('.saveTransaction')
+const buttonChangeTransaction = document.querySelector('.changeTransaction')
+const tituloModal = document.querySelector('.header-modal h1')
 
 buttonSaveTransaction.addEventListener('click', saveTransaction)
+buttonChangeTransaction.addEventListener('click', changeTransaction)
 
 
 iconeTituloDesativo.addEventListener('click', ativarIconeDesativo)
@@ -28,6 +70,9 @@ iconeTituloAtivo.addEventListener('click', ativarIconeAtivo)
 const buttonSair = document.querySelector('#buttonSair')
 
 buttonSair.addEventListener('click', logout)
+
+
+
 
 
 function ativarIconeDesativo(){
@@ -114,13 +159,16 @@ function addTransaction(infoUsers){
         const uidUser = infoUsers.user.uid
         console.log(uidUser)
         if(uidUser !== ''){
-            openModalButton.classList.remove('open-modal')
-            openModalButton.classList.add('dadosCadastrado')
+            tituloModal.innerHTML = "Altere seus dados"
             buttonSaveTransaction.classList.remove('saveTransaction')
             buttonSaveTransaction.classList.add('desativado')
-            textoAlert.classList.remove('desativado')
-            textoAlert.innerHTML = "Dados do usuário já cadastrado"
-            inputCadastro.forEach((item) => item.classList.add('desativado'))
+            buttonChangeTransaction.classList.remove('desativado')
+            openModalButton.innerHTML = "Alterar seus dados"
+            // openModalButton.classList.add('dadosCadastrado')
+
+            // textoAlert.classList.remove('desativado')
+            // textoAlert.innerHTML = "Dados do usuário já cadastrado"
+            // inputCadastro.forEach((item) => item.classList.add('desativado'))
         }else{
             console.log('uid não existe')
         }
@@ -172,9 +220,15 @@ const form = {
 
 function saveTransaction(){
     validatedFormModal()
+}
 
+
+function changeTransaction(){
+
+    validatedFormModalRename()
 
 }
+
 
 
 function validatedFormModal(){
@@ -224,6 +278,53 @@ function validatedFormModal(){
     }
 }
 
+function validatedFormModalRename(){
+
+    if(form.nome().value === '' || form.nome() < 2){
+        // Swal.fire('Campo nome vazio, preencha para proseguir')
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Campo nome vazio, preencha para proseguir'
+        });
+    }else if(form.sobrenome().value === ''){
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Campo sobrenome vazio, preencha para proseguir'
+        });
+    }else if(form.bairro().value === ""){
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Campo bairro vazio, preencha para proseguir'
+        });
+    }else if(form.rua().value === ''){
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Campo rua vazio, preencha para proseguir'
+        });
+    }else if(form.numero().value === "e" || form.numero().value === ''){
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Digite apenas números ou o campo número está vazio'
+        });
+    }else if(form.telefone().value === '' || form.telefone().value === "e"){
+        return Swal.fire({
+            confirmButtonColor: '#FF0B0B',
+            text: 'Digite apenas números ou o campo telefone está vazio'
+        });
+    }else{
+        firebase.firestore()
+        .collection('infoUsers')
+        .doc(getUserUid())
+        .update({nome: form.nome().value, sobrenome: form.sobrenome().value, bairro: form.bairro().value, rua: form.rua().value,
+            numero: form.numero().value, telefone: form.telefone ().value})
+        .then(() => {
+        window.location.href = '../../henrique oliveira/home.html'
+    }).catch(e => {
+        console.log('documento não atualizado', e)
+    })
+    }
+}
+
 
 function creatInfoDados(){
     return {
@@ -231,8 +332,8 @@ function creatInfoDados(){
         sobrenome: form.sobrenome().value,
         bairro: form.bairro().value,
         rua: form.rua().value,
-        numero: Number(form.numero().value),
-        telefone: Number(form.telefone().value),
+        numero: form.numero().value,
+        telefone: form.telefone().value,
         user: {
             uid: firebase.auth().currentUser.uid
         }
