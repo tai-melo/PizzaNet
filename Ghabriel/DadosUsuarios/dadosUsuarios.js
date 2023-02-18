@@ -16,7 +16,7 @@ function findUserUid(uid){
         .get()
         .then(doc => {
             if(doc.exists){
-                findInfoUserScreen(doc.data())
+                console.log(doc.data())
             }else{
                 alert('documento não encontrado')
             }
@@ -26,14 +26,6 @@ function findUserUid(uid){
         })
 }
 
-function findInfoUserScreen(infoUsers){
-    form.nome().value = infoUsers.nome
-    form.sobrenome().value = infoUsers.sobrenome
-    form.bairro().value = infoUsers.bairro
-    form.rua().value = infoUsers.rua
-    form.numero().value = infoUsers.numero
-    form.telefone().value = infoUsers.telefone
-}
 
 
 
@@ -124,7 +116,10 @@ function usersInfo(user){
         .where('user.uid', '==', user.uid)
         .get()
         .then(snapshot => {
-            const inforUsers = snapshot.docs.map(doc => doc.data())
+            const inforUsers = snapshot.docs.map(doc => ({
+                ...doc.data(),
+                uid: doc.id
+            }))
             addTransaction(inforUsers)
             getNameUser(inforUsers)
         })
@@ -157,7 +152,7 @@ function addTransaction(infoUsers){
     infoUsers.forEach(infoUsers => {
 
         const uidUser = infoUsers.user.uid
-        console.log(uidUser)
+        console.log(infoUsers)
         if(uidUser !== ''){
             tituloModal.innerHTML = "Altere seus dados"
             buttonSaveTransaction.classList.remove('saveTransaction')
@@ -201,6 +196,8 @@ const toggleModal = () => {
     el.addEventListener('click', () => toggleModal())
 })
 
+
+
 const formError = {
     nomeError: () => document.getElementById('errorNome'),
     sobrenomeError: () => document.getElementById('errorSobrenome'),
@@ -218,6 +215,15 @@ const form = {
     telefone: () => document.getElementById('phone'),
 }
 
+function findInfoUserScreen(infoUsers){
+    form.nome().value = infoUsers.nome
+    form.sobrenome().value = infoUsers.sobrenome
+    form.bairro().value = infoUsers.bairro
+    form.rua().value = infoUsers.rua
+    form.numero().value = infoUsers.numero
+    form.telefone().value = infoUsers.telefone
+}
+
 function saveTransaction(){
     validatedFormModal()
 }
@@ -225,7 +231,29 @@ function saveTransaction(){
 
 function changeTransaction(){
 
-    validatedFormModalRename()
+    // validatedFormModalRename()
+    firebase.firestore()
+    .collection('infoUsers')
+    .doc(getUserUid())
+    .update({nome: form.nome().value, sobrenome: form.sobrenome().value, bairro: form.bairro().value, rua: form.rua().value,
+        numero: form.numero().value, telefone: form.telefone ().value})
+    .then(() => {
+    window.location.href = '../../melissa gouveia/home.html'
+}).catch(e => {
+    console.log('documento não atualizado', e)
+})
+
+    // firebase.firestore()
+    //     .collection('infoUsers')
+    //     .doc('Mm2zSs6GxADUbWiDovpD')
+    //     .update({nome: 'Lucas da Silva'})
+    //     .then( () =>{
+    //         console.log('documento atualizado')
+    //     })
+    //     .catch(e =>{
+    //         console.log('erro ao atualizar document', e)
+    //     })
+
 
 }
 
@@ -271,7 +299,7 @@ function validatedFormModal(){
         .add(infoUsers)
         .then( () => {
             // hidenLoading();
-            window.location.href = "../../henrique oliveira/home.html";
+            window.location.href = "../../melissa gouveia/home.html";
         }).catch( () => {
             alert('Erro ao salvar seus dados')
         })
@@ -312,16 +340,7 @@ function validatedFormModalRename(){
             text: 'Digite apenas números ou o campo telefone está vazio'
         });
     }else{
-        firebase.firestore()
-        .collection('infoUsers')
-        .doc(getUserUid())
-        .update({nome: form.nome().value, sobrenome: form.sobrenome().value, bairro: form.bairro().value, rua: form.rua().value,
-            numero: form.numero().value, telefone: form.telefone ().value})
-        .then(() => {
-        window.location.href = '../../henrique oliveira/home.html'
-    }).catch(e => {
-        console.log('documento não atualizado', e)
-    })
+
     }
 }
 
@@ -340,13 +359,3 @@ function creatInfoDados(){
 
     }
 }
-
-
-
-
-
-
-
-
-
-

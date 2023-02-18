@@ -44,12 +44,6 @@
   margin-left: 5vh;
 }
 
-#whats {
-  color: #000;
-  border-bottom: 0px;
-  cursor: no-drop;
-}
-
 .text {
   font-weight: 400;
   font-size: 18px;
@@ -86,10 +80,6 @@
   font-weight: 400;
   font-size: 18px;
   height: 6vh;
-}
-
-.textHover:hover {
-  border-bottom: 2px solid black;
 }
 
 .btns {
@@ -157,7 +147,7 @@
   padding-left: 10px;
 }
 
-.description_link{
+.description_link {
   padding-top: 15px;
   padding-left: 15px;
 }
@@ -330,7 +320,7 @@
   }
 
   #modo_preparo_1 {
-  padding: 50px 80px;
+    padding: 50px 80px;
   }
 
   #title_2 {
@@ -339,9 +329,9 @@
 
   #glider-contain {
     margin: 0px;
-  
+
   }
-  
+
 }
 
 

@@ -1,6 +1,6 @@
 firebase.auth().onAuthStateChanged(user => {
     if(user){
-        window.location = '../../henrique oliveira/home.html'
+        window.location = '../../melissa gouveia/home.html'
     }
 })
 
@@ -67,7 +67,7 @@ function validation(){
 function login(){
     showLoading()
     firebase.auth().signInWithEmailAndPassword(form.email().value, form.senha().value).then(Response => {
-      window.location = '../../henrique oliveira/home.html'
+      window.location = '../../melissa gouveia/home.html'
       hidenLoading()
       usersInfo(users)
     }).catch(error =>{
