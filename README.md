@@ -1,6 +1,6 @@
-# Projeto Pizza's Net
+# Projeto Pizza Net
 
-Este é  o Pizza's Net, site desenvolvido  durante o curso de capacitação da Proz, com o financimento da AWS e a Meta. A página web diz respeito uma loja virtual 
+Este é  o Pizza Net, site desenvolvido  durante o curso de capacitação da Proz, com o financimento da AWS e a Meta. A página web diz respeito uma loja virtual 
 do tipo delivery (Cook and Go) em que informamos receitas de pizza e enviamos os produtos porcionados para o cliente, de modo que ele possa preparar o prato em
 sua casa. O site contém sessões com as receitas e vídeos com modo de preparo.
 
