@@ -37,3 +37,9 @@ Acesse nosso Diagrama de Entidade Relacionamento:
 E nosso conjunto de comandos para criação de banco de dados (SQL):
 
 🔗https://docs.google.com/document/d/14dlXkjTvcbTHthMXXgap1JYzrj2EXkuPbP83JC3_YSc/edit?usp=sharing🔗
+
+> Deploy
+
+Acesse nosso deploy:
+
+🔗https://tai-melo.github.io/PizzaNet/melissa%20gouveia/home.html🔗
