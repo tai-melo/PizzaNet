@@ -42,4 +42,4 @@ E nosso conjunto de comandos para criação de banco de dados (SQL):
 
 Acesse nosso deploy:
 
-🔗https://tai-melo.github.io/PizzaNet/melissa%20gouveia/home.html🔗
+🔗https://tai-melo.github.io/PizzaNet/melissa%20gouveia/home.html 🔗
