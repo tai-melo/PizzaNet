@@ -52,7 +52,7 @@ function register(){
     firebase.auth().createUserWithEmailAndPassword(
         email, password
     ).then( () => {
-        window.location = "../../henrique oliveira/home.html"
+        window.location = "../../melissa gouveia/home.html"
     }).catch(error => {
         hidenLoading()
         getErrorMessage(error);

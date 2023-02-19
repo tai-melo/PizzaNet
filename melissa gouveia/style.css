@@ -107,6 +107,7 @@
 .background {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .blackground-home {
@@ -119,7 +120,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 220px;
+  justify-content: center;
+  /* top: 220px; */
 }
 
 .text-home1 {
