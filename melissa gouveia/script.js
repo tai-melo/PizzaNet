@@ -40,10 +40,10 @@ window.addEventListener('load',function(){
             {
                 breakpoint: 500,
                 settings: {
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
+                    slidesToScroll: 'auto',
+                    slidesToShow: 'auto',
                     dots: false,
-                    arrows: true,
+                    arrows: false,
                     scrollLock: true
                 }
             }
