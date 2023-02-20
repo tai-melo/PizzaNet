@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-/* * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-} */
+}
 
 .a {
   text-decoration: none;
@@ -44,12 +44,6 @@
   margin-left: 5vh;
 }
 
-#whats {
-  color: #000;
-  border-bottom: 0px;
-  cursor: no-drop;
-}
-
 .text {
   font-weight: 400;
   font-size: 18px;
@@ -70,23 +64,23 @@
   color: #FF0B0B;
 }
 
-/* Main */
+Main
 
 #main-Content {
   height: 75vh;
   width: 100%;
 }
 
-.pages1 {
+/* .pages1 {
   gap: 25px;
   margin-right: 30vh;
-}
+} */
 
-.textHover {
+/* .textHover {
   font-weight: 400;
   font-size: 18px;
   height: 6vh;
-}
+} */
 
 .btns {
   font-weight: 400;
@@ -218,7 +212,7 @@
 }
 
 .ilustration_1 {
-  width: 150vh;
+  width: 100%;
   box-shadow: 5px 5px 15px;
   border-radius: 10px;
 
@@ -378,8 +372,6 @@
     flex-direction: column;
   }
   .text,
-  .whtas-icon,
-  .bi-bag,
   #whats {
     color: #fff;
   }
@@ -388,12 +380,16 @@
     padding-right: 10px;
   }
 
+  .navegacao {
+    flex-direction: column;
+  }
+
   .pages1,
   .pages2 {
     display: flex;
     width: 100%;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
   }
 
@@ -502,6 +498,14 @@
     width: 140px;
     height: 35px;
     margin-bottom: 0px;
+  }
+
+  #glider-prev {
+    display: none;
+  }
+
+  #glider-next {
+    display: none;
   }
 
   .footer-body {
